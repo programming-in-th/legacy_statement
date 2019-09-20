@@ -1,0 +1,37 @@
+<div><span style="font-family: 'Courier New'; ">หลังจบการแข่งขันโอลิมปิกฤดูร้อน ค.ศ. 2032 ทางประเทศเจ้าภาพต้องการจัดอันดับประเทศที่เข้าร่วมแข่งขันทั้งหมดตามผลการแข่งขัน โดยมีหลักเกณฑ์คือ หากประเทศหนึ่งได้รับเหรียญทอง G เหรียญ เหรียญเงิน S เหรียญ และเหรียญทองแดง B เหรียญ ประเทศนั้นจะได้คะแนนเท่ากับ GW<sub>G</sub>&nbsp;+ SW<sub>S</sub> + BW<sub>B</sub> โดยที่ W<sub>G</sub>, W<sub>S</sub>, W<sub>B</sub> เป็นจำนวนจริงบวกที่ W<sub>G</sub> &ge; W<sub>S</sub> &ge; W<sub>B</sub> การจัดอันดับประเทศจะเรียงตามคะแนนจากมากไปหาน้อย และหากมีประเทศมากกว่า 1 ประเทศได้คะแนนเท่ากัน จะถือว่าประเทศเหล่านั้นได้อันดับที่ดีที่สุดร่วมกัน<br />
+</span><span style="font-family: 'Courier New'; "><br />
+ทางประเทศเจ้าภาพต้องการเลือกค่าถ่วงน้ำหนัก W<sub>G</sub>, W<sub>S</sub>, W<sub>B</sub> ที่เหมาะสม ที่จะทำให้ประเทศของตนอยู่ในอันดับที่ดีที่สุดที่เป็นไปได้<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>งานของคุณ</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">จงเขียนโปรแกรมเพื่อรับจำนวนเหรียญทอง เหรียญเงิน และเหรียญทองแดงที่แต่ละประเทศได้รับ แล้วคำนวณหาอันดับที่ดีที่สุดที่เป็นไปได้ของประเทศเจ้าภาพ เมื่อเลือกค่าถ่วงน้ำหนักที่เหมาะสม<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>ข้อมูลนำเข้า</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">บรรทัดแรกระบุจำนวนเต็ม N (2 &le; N &le; 1,000) แทนจำนวนประเทศที่เข้าร่วมแข่งขัน<br />
+</span><span style="font-family: 'Courier New'; "><br />
+อีก N บรรทัดต่อมา ในบรรทัดที่ i+1 (1 &le; i &le; N) ระบุจำนวนเต็ม G<sub>i</sub>, S<sub>i</sub> และ B<sub>i</sub>&nbsp;(0&nbsp;</span><span style="font-family: 'Courier New'; ">&le;</span><span style="font-family: 'Courier New'; ">&nbsp;</span><span style="font-family: 'Courier New'; ">G</span><sub style="font-family: 'Courier New'; ">i</sub><span style="font-family: 'Courier New'; ">, S</span><sub style="font-family: 'Courier New'; ">i</sub><span style="font-family: 'Courier New'; ">,&nbsp;</span><span style="font-family: 'Courier New'; ">B</span><sub style="font-family: 'Courier New'; ">i</sub><span style="font-family: 'Courier New'; ">&nbsp;</span><span style="font-family: 'Courier New'; ">&le; 4</span><span style="font-family: 'Courier New'; ">00</span><span style="font-family: 'Courier New'; ">) แทนจำนวนเหรียญทอง เหรียญเงิน และเหรียญทองแดงที่ประเทศที่ i ได้รับ โดยประเทศที่ 1 หมายถึงประเทศเจ้าภาพ และประเทศที่ 2, 3, 4 ไปเรื่อยๆ จนถึง N คือประเทศอื่นๆ ที่เข้าร่วมแข่งขัน</span></div>
+<div><span style="font-family: 'Courier New'; "><br />
+<u><strong>ข้อมูลส่งออก</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">มีบรรทัดเดียว ระบุอันดับที่ดีที่สุดที่เป็นไปได้ของประเทศเจ้าภาพ เมื่อเลือกค่าถ่วงน้ำหนักที่เหมาะสม<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>คำอธิบายตัวอย่าง</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">ในตัวอย่างที่ 1 ค่าถ่วงน้ำหนักที่เป็นไปได้ เช่น W</span><sub style="font-family: 'Courier New'; ">G</sub><span style="font-family: 'Courier New'; ">&nbsp;= W</span><sub style="font-family: 'Courier New'; ">S</sub><span style="font-family: 'Courier New'; ">&nbsp;= W</span><sub style="font-family: 'Courier New'; ">B</sub><span style="font-family: 'Courier New'; ">&nbsp;= 1 ซึ่งจะทำให้ประเทศเจ้าภาพได้อันดับ 3</span>&nbsp;<br />
+<font face="'Courier New'"><br />
+ในต้วอย่างที่ 2 ค่าถ่วงน้ำหนักที่เป็นไปได้ เช่น W</font><sub style="font-family: 'Courier New'; ">G</sub><font face="'Courier New'"> = 2, W</font><sub style="font-family: 'Courier New'; ">S</sub><font face="'Courier New'"> = 1, W</font><sub style="font-family: 'Courier New'; ">B</sub><font face="'Courier New'"> = 0.1 ซึ่งจะทำให้ประเทศเจ้าภาพได้อันดับ 2 ร่วมกับประเทศที่ 2 และประเทศที่ 3<br />
+</font><span style="font-family: 'Courier New'; "><br />
+</span><u style="font-family: 'Courier New'; "><strong>ที่มา</strong></u><br style="font-family: 'Courier New'; " />
+<span style="font-family: 'Courier New'; ">โจทย์โดย: สุธี เรืองวิเศษ</span><span style="font-family: 'Courier New'; "><br type="_moz" />
+</span></div>
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>4<br />1 2 3<br />2 3 4<br />3 0 0<br />10 10 10</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>5<br />3 3 0<br />2 5 0<br />4 1 0<br />50 0 0<br />0 0 50</td>
+				<td>2</td>
+			</tr></table>

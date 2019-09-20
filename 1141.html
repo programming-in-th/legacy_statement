@@ -1,0 +1,42 @@
+<div><span style="font-family: 'Courier New'; ">มีโดมิโนจำนวน N<sup>2</sup> ตัว ตั้งเรียงเป็นรูปสี่เหลี่ยมจัตุรัสขนาด&nbsp;</span><span style="font-family: 'Courier New'; ">N&times;N</span>&nbsp;<span style="font-family: 'Courier New'; ">อยู่บนพื้น โดมิโนเหล่านี้เป็นโดมิโนพิเศษที่สามารถผลักให้ล้มได้ในทุกทิศทาง<br />
+</span><span style="font-family: 'Courier New'; "><br />
+คุณต้องการผลักโดมิโนทั้งหมด M ครั้ง ในแต่ละครั้งจะผลักไปตามแนวของแถวหรือหลักของรูปสี่เหลี่ยมจัตุรัส โดยจะเริ่มผลักที่ตัวริมสุดของแถวหรือหลักนั้นเสมอ โดมิโนที่ถูกผลักจะล้มลง และหากมีโดมิโนตั้งอยู่ที่ตำแหน่งถัดไปในทิศทางที่ผลัก โดมิโนตัวนั้นก็จะล้มลงด้วย และจะล้มลงต่อกันไปเรื่อยๆ จนกว่าจะสุดแถว หรือมีโดมิโนที่ล้มอยู่แล้วตั้งอยู่ระหว่างทาง การล้มก็จะหยุดทันที<br />
+</span><span style="font-family: 'Courier New'; "><br />
+คุณต้องการทราบว่า ในการผลักแต่ละครั้ง จะมีโดมิโนล้มลงทั้งหมดกี่ตัว<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>งานของคุณ</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">จงเขียนโปรแกรมเพื่อรับขนาดของรูปสี่เหลี่ยมจัตุรัสและทิศทางในการผลักแต่ละครั้ง แล้วคำนวณหาจำนวนโดมิโนที่ล้มลงในการผลักแต่ละครั้ง<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>ข้อมูลนำเข้า</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">บรรทัดแรกระบุจำนวนเต็ม N และ M (1 &le; N &le; 1,000,000,000; 1 &le; M &le; 100,000) แทนขนาดของรูปสี่เหลี่ยมจัตุรัส และจำนวนครั้งในการผลัก<br />
+</span><span style="font-family: 'Courier New'; "><br />
+อีก N บรรทัดต่อมา ในบรรทัดที่ i+1 (1 &le; i &le; N) ระบุตัวอักษร N, S, W หรือ E แล้วตามด้วยจำนวนเต็ม X<sub>i</sub> แทนการผลักครั้งที่ i</span></div>
+<ul>
+    <li><span style="font-family: 'Courier New'; ">หากอักษรตัวแรกคือ N หมายความว่า ผลักโดมิโนตามแนวหลักที่ X<sub>i</sub> โดยเริ่มผลักที่ตัวในแถวบนสุด (ผลักในทิศลงมาด้านล่าง)</span></li>
+    <li><span style="font-family: 'Courier New'; ">หากอักษรตัวแรกคือ S หมายความว่า ผลักโดมิโนตามแนวหลักที่ X<sub>i</sub> โดยเริ่มผลักที่ตัวในแถวล่างสุด (ผลักในทิศขึ้นไปด้านบน)</span></li>
+    <li><span style="font-family: 'Courier New'; ">หากอักษรตัวแรกคือ W หมายความว่า ผลักโดมิโนตามแนวแถวที่ X<sub>i</sub> โดยเริ่มผลักที่ตัวในแถวซ้ายสุด (ผลักในทิศไปทางขวา)</span></li>
+    <li><span style="font-family: 'Courier New'; ">หากอักษรตัวแรกคือ E หมายความว่า ผลักโดมิโนตามแนวแถวที่ X<sub>i</sub> โดยเริ่มผลักที่ตัวในแถวขวาสุด (ผลักในทิศไปทางซ้าย)</span></li>
+</ul>
+<span style="font-family: 'Courier New'; "><u><strong>ข้อมูลส่งออก</strong></u><br />
+<span style="font-family: 'Courier New'; ">มีทั้งหมด N บรรทัด โดยในบรรทัดที่ i&nbsp;</span></span><span style="font-family: 'Courier New'; ">(1 &le; i &le; N)</span>&nbsp;<span style="font-family: 'Courier New'; "><span style="font-family: 'Courier New'; ">ระบุจำนวนโดมิโนที่ล้มลงในการผลักครั้งที่ i<br />
+</span><span style="font-family: 'Courier New'; "><br />
+</span><u><strong><span style="font-family: 'Courier New'; ">การให้คะแนน</span></strong></u></span>
+<div><span style="font-family: 'Courier New'; ">30% ของข้อมูลทดสอบ จะมี N &le; 1,000</span></div>
+<div><span style="font-family: 'Courier New'; ">60% ของข้อมูลทดสอบ จะมี N &le; 100,000<br />
+<br />
+</span><span style="font-family: 'Courier New'; "><u><strong>ที่มา</strong></u></span><span style="font-family: 'Courier New'; "><br />
+โจทย์โดย: สุธี เรืองวิเศษ</span></div>
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>3 4<br />N 2<br />W 3<br />S 2<br />N 1</td>
+				<td>3<br />1<br />0<br />2</td>
+			</tr>
+			<tr>
+				<td>4 5<br />E 3<br />N 2<br />E 1<br />N 3<br />S 2</td>
+				<td>4<br />2<br />2<br />0<br />1</td>
+			</tr></table>

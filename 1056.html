@@ -1,0 +1,63 @@
+<span style="font-family: Courier New;">มือแมนเป็นยอดมนุษย์ที่เกิดมาเพื่อรับใช้มวลมนุษย์โดยแท้ เขาสามารถทำางานตามสั่งได้ทุกอย่าง และยังเป็นคนที่เกิดมามีมือ K มือจึงสามารถทำางานไปพร้อมๆ กันเป็นชุดๆ ได้มากที่สุดถึง K งาน เพียงแต่ว่าหลังจากมือแมนรับงานชุดใดๆ มาทำแล้ว เขาไม่รับงานใดๆ เข้ามาทำอีกจนกว่างานที่ทำาอยู่จะเสร็จหมดทัง้ ชุด แล้วจึงส่งจากที่ทำาไว้ทัง้ หมดให้คนสั่งพร้อมๆกัน หลังจากนั้น ถึงรับงานชุดถัดไปเข้ามาทำต่อทันที<br />
+<br />
+พิจารณาเมื่อวานมีคนสั่งงานมือแมน 5 คน แต่ละงานใช้เวลา 6, 1, 2, 8, 7 หน่วยตามลำาดับถ้ามือแมนมีวิธีการทำงานดังนี้<br />
+<br />
+<table cellspacing="0" cellpadding="5" border="1" align="center" width="95%">
+    <tbody>
+        <tr>
+            <td style="text-align: center;"><strong>ชุดที่</strong></td>
+            <td style="text-align: center;"><strong>งานต้องใช้เวลา</strong></td>
+            <td style="text-align: center;"><strong>ใช้เวลา</strong></td>
+            <td style="text-align: center;"><strong>จำนวนคนสั่ง</strong></td>
+            <td style="text-align: center;"><strong>เวลาที่รอมาทั้งหมด</strong></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">6</td>
+            <td style="text-align: center;">6</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">6</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">1,2</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">6+2</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">3</td>
+            <td style="text-align: center;">8,7</td>
+            <td style="text-align: center;">8</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">6+2+8</td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<br />
+ถ้ากำาหนดให้ เวลาที่คนที่รอมือแมนนานที่สุดเป็นค่า X จะเห็นได้ว่าค่า X มีค่าเป็น 6+2+8 = 16 หน่วย สังเกตว่ามือแมนจัดวิธีการทำางานให้ดีกว่านี้ จะสามารถลดเวลารอของคนที่รอมือแมนนานที่สุดได้<br />
+<br />
+สำาหรับในวันนีเ้หล่ามวลมนุษย์ N คน ขอให้มือแมนทำางานให้เหมือนทุกๆ วัน สำาหรับงานที่ i (เมื่อ 1 &lt;= i &lt;= N) มือแมนจะต้องใช้เวลา Ti หน่วยจึงจะทำงานเสร็จ<br />
+<br />
+<u><strong>งานของคุณ</strong></u><br />
+ให้เขียนโปรแกรมที่รับข้อมูลจำานวนมือของมือแมนและเวลาที่ต้องใช้ของงานแต่ละงานที่เหล่ามวลมนุษย์ของให้มือแมนทำ และคำนวณหาค่า X ที่น้อยที่สุดที่เป็นไปได้<br />
+<br />
+<u><strong>ข้อมูลป้อนเข้า</strong></u><br />
+บรรทัดแรกระบุจำนวนเต็ม N และ K (1&lt;= N &lt;= 2,000; 1 &lt;= K &lt;= 2,000)<br />
+จากนั้น อีก N บรรทัดจะระบุเวลาที่มือแมนต้องใช้สำาหรับงานต่างๆ กล่าวคือสำาหรับ 1 &lt;= i &lt;= N ในบรรทัดที่ i + 1 จะระบุค่า Ti ของ (1 &lt;= Ti &lt;= 1,000)<br />
+<br />
+<u><strong>ข้อมูลส่งออก</strong></u><br />
+มีข้อมูลเพียงบรรทัดเดียว ประกอบด้วยจำานวนเต็มหนึ่ง จำนวนคือค่า X ที่น้อยที่สุดที่เป็นไปได้<br />
+<br />
+<span><u><strong>ที่มา</strong></u><strong>: Young Thai Online Programming Competition 2008</strong></span> </span>
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>5 3<br />6<br />1<br />2<br />8<br />7</td>
+				<td>10</td>
+			</tr></table>

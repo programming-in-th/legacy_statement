@@ -1,0 +1,58 @@
+Author<br />
+Nick Pilkington<br />
+Introduction<br />
+Bruce likes to visit his friends on the weekend. His friends<br />
+are scattered around near where he lives and each lives at<br />
+a unique location. Since Bruce does not have much time<br />
+for visiting, he would like to make the most of his visits.<br />
+Bruce wants to find the two friends that live closest to<br />
+each other so that he can visit both of them in the same<br />
+visit.<br />
+Having a lot on his mind, Bruce was rushed when making<br />
+the list of friends&rsquo; locations and thus may have specified<br />
+some locations more than once. He trusts that you<br />
+will be able to take this matter into account.<br />
+Task<br />
+Each of Bruces N friends live at some lattice coordinate<br />
+(xi, yi). You will be given a description of the position<br />
+of all Bruce&rsquo;s friends and need to compute the distance<br />
+between the two closest friends. The distance metric used<br />
+is the standard Euclidean distance in two dimensions:<br />
+<br />
+dist(a, b) = sqrt[ (ax &minus; bx)2 + (ay &minus; by)2 ]<br />
+<br />
+Example<br />
+Suppose Bruce&rsquo;s friends are at the coordinates (3, 0),<br />
+(3, 5), (2, 4), (4, 2) and (0, 2) as illustrated in Figure 1.<br />
+The two friend&rsquo;s at (2, 4) and (3, 5) are the closest at a<br />
+distance of 1.41.<br />
+<br />
+---<br />
+<br />
+Figure 1: Example of the location of Bruce&rsquo;s friends. The<br />
+two larger points represent the closest friends.<br />
+<br />
+Input (stdin)<br />
+The first line contains a single integer, N. The next N<br />
+lines each contain two space-separated integers xi and yi,<br />
+the coordinates of a friend.<br />
+<br />
+Output (stdout)<br />
+Output a single number, the distance between the two<br />
+closest friends rounded off to two decimal places.<br />
+<br />
+Constraints<br />
+&bull; 2 &lt;= N &lt;= 100 000<br />
+&bull; 0 &lt;= xi, yi &lt;= 1 000 000 000 for all i<br />
+50% constraints<br />
+&bull; 1 &lt;= N &lt;= 10 000<br type="_moz" />
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>5<br />3 0<br />3 5<br />2 4<br />4 2<br />0 2</td>
+				<td>1.41</td>
+			</tr></table>

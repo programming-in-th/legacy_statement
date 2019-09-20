@@ -1,0 +1,50 @@
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-cluster;
+text-indent:36.0pt"><span lang="TH">นักสู้ฝ่ายเลขคู่กับฝ่ายเลขคี่ทำการประลองฝีมือกันแบบตัวต่อตัว โดยในตอนเริ่มประลอง นักสู้ทั้งสองมี </span>&lsquo;<span lang="TH">พลังงาน</span>&rsquo; <span lang="TH">เริ่มต้นอยู่ฝ่ายละ&nbsp;</span><span style="mso-spacerun:yes">P </span><span lang="TH">หน่วย  การโจมตีของแต่ละฝ่ายถูกกำหนดโดยเลขที่เป็นข้อมูลเข้า  หากข้อมูลเข้าเป็นเลขคู่แสดงว่านักสู้ฝ่ายเลขคู่ทำการโจมตี  หากข้อมูลเข้าเป็นคี่แสดงว่านักสู้ฝ่ายเลขคี่ทำการโจมตี  การโจมตีแต่ละครั้งจะทำให้อีกฝ่ายเสียพลังงานหนึ่งหน่วย  ทั้งนี้หากฝ่ายใดโจมตีติดต่อกันครั้งที่สามหรือมากกว่าจะถือเป็นท่าชุดโจมตี  ซึ่งจะทำให้อีกฝ่ายเสียพลังงานครั้งละ 3 หน่วยต่อการโจมตี </span></p>
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-cluster;
+text-indent:36.0pt"><span lang="TH">เช่น หากข้อมูลเข้าเป็น </span>0 2 4 6 8 1 <span lang="TH">10 3 </span>7 9 1<span lang="TH">2 แสดงว่าฝ่ายเลขคู่โจมตีติดต่อกันถึง </span>5<span lang="TH"> ครั้งก่อนที่ฝ่ายเลขคี่จะทำการโจมตีแทรกขึ้นมา จากข้อมูลเข้านี้ฝ่ายเลขคู่ได้ลดพลังงานของฝ่ายเลขคี่เป็นจำนวนทั้งหมด<br />
+</span>1 + 1 + 3 + 3 + 3 + 1 + 1<span lang="TH"> ซึ่งมาจากเลข</span> 0 2 4 6 8<span lang="TH"> 10</span> 1<span lang="TH">2 ตามลำดับ โดยเลข 4 6 และ 8 เป็นการโจมตีติดต่อกันครั้งที่ </span>3 4 <span lang="TH">และ </span>5 <span lang="TH">ตาม ลำดับ ทำให้พลังงานฝ่ายเลขคี่ลดลงครั้งละ 3 หน่วย ส่วนเลข 10 และ 12  จะลดพลังงานฝ่ายเลขคี่ได้แค่ครั้งละ 1  หน่วยเท่านั้นเพราะไม่ใช่การโจมตีที่ติดต่อกันถึงสามครั้ง  จากข้อมูลเข้าเดียวกัน ฝ่ายเลขคี่ได้ลดพลังงานฝ่ายเลขคู่เป็นปริมาณเท่ากับ 1  </span>+ <span lang="TH">1</span> +<span lang="TH"> 1</span> +<span lang="TH"> 3 หน่วยจากตัวเลข 1 3 7 และ 9 ตามลำดับ โดยเลข 9 ลดพลังงานฝ่ายเลขคู่ 3 หน่วยเพราะเป็นการโจมตีติดต่อกันเป็นครั้งที่ 3 </span></p>
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-cluster;
+text-indent:36.0pt"><span lang="TH">การประลองจะจบลงทันที เมื่อพลังงานของฝ่ายใดฝ่ายหนึ่งลดลงจนเหลือศูนย์หรือติดลบ ส่วนอีกฝ่ายที่ยังเหลือพลังงานคือผู้ชนะในการประลอง</span><span style="mso-spacerun:yes">&nbsp; </span><span lang="TH">จงเขียนโปรแกรมที่คำนวณหาผู้ชนะจากการประลองครั้งนี้</span></p>
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-cluster;
+text-indent:36.0pt">&nbsp;</p>
+<p class="MsoNormal"><b><span lang="TH">ข้อมูลเข้า</span></b></p>
+<p class="MsoListParagraphCxSpFirst" style="mso-list:l1 level1 lfo2"><span style="mso-fareast-font-family:&quot;TH SarabunPSK&quot;;mso-fareast-theme-font:minor-latin"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span lang="TH">บรรทัดแรกคือจำนวนเต็ม </span><span lang="TH" style="font-size:16.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+position:relative;top:5.5pt;mso-text-raise:-5.5pt;mso-ansi-language:EN-US;
+mso-fareast-language:EN-US;mso-bidi-language:TH">   </span><span style="mso-spacerun:yes">P </span><span lang="TH">ระบุพลังงานเริ่มต้นที่นักสู้ทั้งสองมี โดยที่ ( 1 <u>&lt;</u> P <u>&lt;</u> 500 000 )</span><span lang="TH" style="font-size:16.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+position:relative;top:5.5pt;mso-text-raise:-5.5pt;mso-ansi-language:EN-US;
+mso-fareast-language:EN-US;mso-bidi-language:TH">   </span></p>
+<p class="MsoListParagraphCxSpLast" style="mso-list:l1 level1 lfo1"><span style="mso-fareast-font-family:&quot;TH SarabunPSK&quot;;mso-fareast-theme-font:minor-latin"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span lang="TH">บรรทัดที่สองเป็นจำนวนเต็มทั้งหมด </span><span lang="TH" style="font-size:16.0pt;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+position:relative;top:5.5pt;mso-text-raise:-5.5pt;mso-ansi-language:EN-US;
+mso-fareast-language:EN-US;mso-bidi-language:TH">   </span><span style="mso-spacerun:yes">2P </span><span lang="TH">จำนวน ตัวเลขแต่ละตัวคั่นด้วยช่องว่างหนึ่งช่อง</span></p>
+<p class="MsoNormal"><b><span lang="TH">ข้อมูลส่งออก</span></b></p>
+<p class="MsoListParagraphCxSpFirst" style="mso-list:l1 level1 lfo3"><span style="mso-fareast-font-family:&quot;TH SarabunPSK&quot;;mso-fareast-theme-font:minor-latin"><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span lang="TH">บรรทัดแรกระบุผู้ชนะ โดยให้พิมพ์เลข 0 เมื่อฝ่ายเลขคู่เป็นผู้ชนะ แต่ให้พิมพ์เลข 1 หากฝ่ายเลขคี่เป็นผู้ชนะ</span></p>
+<p class="MsoListParagraphCxSpLast" style="mso-list:l1 level1 lfo1"><span style="mso-fareast-font-family:&quot;TH SarabunPSK&quot;;mso-fareast-theme-font:minor-latin"><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span lang="TH">ระบุตัวเลขแรกที่ทำให้ฝ่ายที่แพ้มีพลังชีวิตเหลือศูนย์หรือติดลบ</span></p>
+<p class="MsoNormal" style="margin-bottom:10.0pt;text-align:justify;text-justify:
+inter-cluster;line-height:115%"><b><span lang="TH">หมายเหตุ</span></b><span lang="TH">  โปรแกรมไม่จำเป็นต้องรับข้อมูลเข้าทุกตัว หากตัดสินผู้ชนะได้แล้ว  (เพราะมีฝ่ายที่พลังงานลดลงเหลือศูนย์หรือน้อยกว่า)  โปรแกรมสามารถพิมพ์ผลลัพธ์และจบการทำงานได้เลย</span></p>
+<p class="MsoNormal" style="margin-bottom:10.0pt;text-align:justify;text-justify:
+inter-cluster;line-height:115%">&nbsp;</p>
+<p class="MsoNormal"><span lang="TH">ที่มา </span>: <span lang="TH">การแข่งขันคอมพิวเตอร์โอลิมปิกระดับชาติครั้งที่ </span>8 (SUTOI8)</p>
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>6<br />7 5 2 4 8 1 3 9 11 12 13 14<br /></td>
+				<td>1<br />9<br /></td>
+			</tr>
+			<tr>
+				<td>8<br />1 2 3 4 5 6 7 8 9 10 2 4 6 8 10 12<br /></td>
+				<td>0<br />4<br /></td>
+			</tr>
+			<tr>
+				<td>10<br />1 2 3 4 5 6 7 8 9 10 11 13 15 16 17 18 19 20 21 22<br /></td>
+				<td>1<br />15<br /></td>
+			</tr></table>

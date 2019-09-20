@@ -1,0 +1,31 @@
+<p class="MsoNormal"><span style="font-size: small;"><span style="font-family: Arial;"><span style="line-height: 20px;">ชั้นวางหนังสือหมวดวิทยาการคอมพิวเตอร์ในหอสมุดแห่งหนึ่งมีลักษณะแปลกประหลาดมาก ประการแรก ชั้นวางหนังสือนี้มีเพียงแค่ชั้นเดียวและมีช่องที่สามารถเก็บหนังสือได้&nbsp;m ช่อง&nbsp;(m &lt;= 10</span><sup style="font-family: Arial; line-height: 20px;">9</sup><span style="line-height: 20px;">) ประการที่สอง ชั้นวางหนังสือนี้วนเป็นวงกลม กล่าวคือช่องแรก (ช่องที่ 0) กับช่องสุดท้าย (ช่องที่ m - 1) จะอยู่ติดกัน&nbsp;<br />
+<br />
+เมื่อบรรณารักษ์จะเก็บหนังสือเข้าชั้น เขาจะคำนวณหาช่องที่จะเก็บโดยนำ</span><span style="line-height: 20px;">เลขมาตรฐานสากลประจำหนังสือของหนังสือเล่มนั้น</span><span style="line-height: 20px;">มาหารหาเศษ (mod) ด้วย m และนำหนังสือไปเก็บในช่องดังกล่าว (กล่าวคือ หาก x คือ</span></span></span><span style="font-family: Arial; font-size: small; line-height: 20px;">เลขมาตรฐานสากลประจำหนังสือ ช่องที่จะนำไปเก็บก็คือ x</span><sub style="font-family: Arial;"><span style="line-height: 20px;">&nbsp;</span></sub><span style="font-family: Arial; font-size: small; line-height: 20px;">mod m) ในกรณีที่ช่องดังกล่าวมีหนังสืออยู่แล้ว บรรณารักษ์จะวางหนังสือในช่องถัดไปแทน และหาก</span><span style="font-family: Arial; font-size: small; line-height: 20px;">ช่องถัดไปมีหนังสืออยู่แล้ว&nbsp;</span><span style="font-family: Arial; font-size: small; line-height: 20px;">บรรณารักษ์จะวางหนังสือในช่องถัดจากนั้นไปอีก เป็นเช่นนี้ไปเรื่อย ๆ</span></p>
+<p class="MsoNormal"><span style="font-size: small;"><span style="font-family: Arial;"><span style="line-height: 20px;"> <br />
+เริ่มแรกในชั้นวางหนังสือนี้ไม่มีหนังสืออยู่เลย จากนั้นมีหนังสือจำนวน n เล่ม&nbsp;(n &lt;= 2*10</span><sup style="font-family: Arial; line-height: 20px;">5</sup><span style="line-height: 20px;">, n &lt;= m</span><span style="line-height: 20px;">) เรียงเข้ามาให้</span><span style="line-height: 20px;">บรรณารักษ์เก็บตามลำดับ <br />
+<br />
+งานของคุณคือให้ช่วยบรรณารักษ์หาช่องที่จะวางหนังสือสำหรับหนังสือแต่ละเล่ม<br />
+</span></span></span><span style="font-size: small;"><span style="font-family: Arial;"><u><strong><span style="line-height: 20px;"><br />
+ข้อมูลนำเข้า</span></strong></u><span style="line-height: 20px;"><br />
+บรรทัดแรก มีจำนวนเต็มบวก n m<br />
+บรรทัดที่สอง มีจำนวนเต็มไม่เป็นลบ n ตัว แสดงถึงเลขมาตรฐานสากลประจำหนังสือของหนังสือเล่มต่าง ๆ รับประกันว่าเลขเหล่านี้ล้วนน้อยกว่า </span><span style="line-height: 20px;">10</span><sup style="font-family: Arial; line-height: 20px;">9<br />
+</sup></span></span><span style="font-size: small;"><span style="font-family: Arial;"><u><strong><span style="line-height: 20px;"><br />
+ข้อมูลส่งออก</span></strong></u><span style="line-height: 20px;"><br />
+มีบรรทัดเดียว ประกอบไปด้วยจำนวนเต็ม n จำนวน บอกถึงช่องที่หนังสือต่าง ๆ ที่บรรณารักษ์จะนำหนังสือมาวาง<br />
+</span></span></span><font face="Arial" size="2"><span style="line-height: 20px;"><b><u><br />
+ที่มา<br />
+</u></b></span></font><span style="font-family: Arial; font-size: small; line-height: 24px;">การแข่งขัน TUMSO ครั้งที่ 10<br />
+</span><span style="font-family: Arial; font-size: small; line-height: 24px;">โจทย์โดย สรวีย์ พรเจริญวาสน์<br />
+<br />
+<br type="_moz" />
+</span></p>
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>5 5<br />1 6 2 4 3</td>
+				<td>1 2 3 4 0</td>
+			</tr></table>

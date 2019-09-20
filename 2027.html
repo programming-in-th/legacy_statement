@@ -1,0 +1,39 @@
+The Government of Siruseri has decided to auction off land in its oil-rich Navalur province to private contractors to set up oil wells. The entire area that is being auctioned off has been divided up into an M x N rectangular grid of smaller plots.<br />
+&nbsp;&nbsp; &nbsp;The Geological Survey of Siruseri has data on the estimated oil reserves in Navalur. This information is published as an M x N grid of non-negative integers, giving the estimated reserves in each of the plots.<br />
+&nbsp;&nbsp; &nbsp;In order to prevent a monopoly, the government has ruled that any contractor may bid for only one K x K square block of contiguous plots.<br />
+&nbsp;&nbsp; &nbsp;The AoE oil cartel consists of a group of 3 colluding contractors who would like to choose 3 disjoint blocks so as to maximize their total yield.<br />
+&nbsp;&nbsp; &nbsp;Suppose that the estimated oil reserves are as described below:<br />
+<div style="text-align: center;">1 1 1 1 1 1 1 1 1<br />
+1 1 1 1 1 1 1 1 1<br />
+1 8 8 8 8 8 1 1 1<br />
+1 8 8 8 8 8 1 1 1<br />
+1 8 8 8 8 8 1 1 1<br />
+1 1 1 1 8 8 8 1 1<br />
+1 1 1 1 1 1 8 8 8<br />
+1 1 1 1 1 1 9 9 9<br />
+1 1 1 1 1 1 9 9 9</div>
+If K = 2 , the AoE cartel can take over plots with a combined estimated reserve of 100 units, whereas if K = 3 they can take over plots with a combined estimated reserve of 208 units.<br />
+<br />
+<u><strong>Task</strong></u><br />
+&nbsp;&nbsp; &nbsp;AoE has hired you to write a program to help them identify the maximum estimated oil reserves that they can take over.<br />
+<br />
+<u><strong>Input format</strong></u><br />
+The first line of the input contains three integers M, N and K, where M and N are the number of rows and columns in the rectangular grid of plots and K is the size of the square block for which bids can be made. The next M lines contain N non-negative integers|each line describes the estimated oil reserves for one row of plots.<br />
+<br />
+<strong><u>Output format</u></strong><br />
+A single line with a single integer indicating the maximum estimated oil reserves that can be taken over by the AoE cartel.<br />
+<br />
+<u><strong>Test Data</strong></u><br />
+You may assume that K &lt;= M and K &lt;= N and that at least three disjoint K x K blocks are available. In 30% of the inputs, M,N &lt;= 12. In all inputs, M,N &lt;= 1500. The estimated oil reserve for each plot is always non-negative and never exceeds 500.<br />
+<br />
+<u><strong>Reference:</strong></u><strong> Asia-Pacific Informatics Olympiad 2009</strong>
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>9 9 3<br />1 1 1 1 1 1 1 1 1<br />1 1 1 1 1 1 1 1 1<br />1 8 8 8 8 8 1 1 1<br />1 8 8 8 8 8 1 1 1<br />1 8 8 8 8 8 1 1 1<br />1 1 1 1 8 8 8 1 1<br />1 1 1 1 1 1 8 8 8<br />1 1 1 1 1 1 9 9 9<br />1 1 1 1 1 1 9 9 9</td>
+				<td>208</td>
+			</tr></table>

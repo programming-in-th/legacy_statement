@@ -1,0 +1,39 @@
+<span style="font-family: 'Courier New'; ">คมกฤษณ์เปิดตู้เย็น พบวุ้นกะทิค้างคืนส่งกลิ่นคละคลุ้งไปทั่ว ขณะที่เขากำลังจะหยิบวุ้นก้อนนั้นไปทิ้ง เขาก็ระลึกได้ว่าวุ้นก้อนนั้นเหมาะที่จะใช้ทดสอบความคมของมีดที่เพิ่งซื้อมาจากรายการแนะนำสินค้าทางโทรทัศน์ยามค่ำคืน<br />
+</span><span style="font-family: 'Courier New'; "><br />
+คมกฤษณ์ต้องการตัดวุ้นซึ่งเป็นทรงสี่เหลี่ยมมุมฉากขนาด A&times;B&times;C นิ้ว โดยแต่ละครั้งที่เขาตัดวุ้น เขาจะเลือกตัดโดยพยายามแบ่งด้านที่ยาวที่สุดของวุ้นออกเป็นสองส่วนเท่าๆ กัน แต่เนื่องจากเขาต้องการให้ขนาดของวุ้นเป็นจำนวนเต็มนิ้วเสมอ หากด้านที่ยาวที่สุดนั้นมีความยาวเป็นจำนวนคี่นิ้ว เขาจะฝานวุ้นทิ้ง 1 นิ้วก่อนจะแบ่งด้านนั้นออกเป็น 2 ส่วนเท่าๆ กัน เมื่อตัดแบ่งแล้ว คมกฤษณ์จะโยนวุ้นส่วนใดส่วนหนึ่งทิ้งไป ก่อนจะพยายามตัดวุ้นส่วนที่เหลืออีกครั้งด้วยวิธีการเดิม<br />
+</span><span style="font-family: 'Courier New'; "><br />
+สังเกตว่าคมกฤษณ์จะตัดวุ้นไปได้เรื่อยๆ จนกว่าจะเหลือวุ้นขนาด 1&times;1&times;1 นิ้ว (หากคมกฤษณ์ยังรั้นตัดวุ้นต่อไปอีก วุ้นจะเละ ส่งกลิ่นคละคลุ้งรุนแรงกว่าเดิม)<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>งานของคุณ</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">รับข้อมูลขนาดของวุ้น แล้วคำนวณว่าคมกฤษณ์จะตัดวุ้นตามขั้นตอนได้กี่ครั้ง (ไม่นับการฝานวุ้น)<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>ข้อมูลนำเข้า</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">บรรทัดเดียว ระบุจำนวนเต็ม A, B และ C (1 &le; A,B,C &le; 1,000,000) คั่นด้วยช่องว่างหนึ่งช่อง<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>ข้อมูลส่งออก</strong></u><br />
+</span><font face="'Courier New'">บรรทัดเดียว ระบุว่าคมกฤษณ์จะตัดวุ้นตามขั้นตอนได้กี่ครั้ง<br />
+<u><strong><font face="'Courier New'"><br />
+อธิบายตัวอย่างข้อมูลที่ 1<br />
+</font></strong></u><strong><span style="font-family: 'Courier New'; ">ครั้งที่ 1:</span></strong><span style="font-family: 'Courier New'; "> วุ้นขนาด 2&times;5&times;4 นิ้ว จะถูกตัดเป็นวุ้นขนาด 2&times;2&times;4 นิ้ว เพราะด้านที่ยาวที่สุดคือด้านที่ยาว 5 นิ้ว เนื่องจากเป็นจำนวนคี่จึงถูกฝานออก 1 นิ้ว เหลือ 4 นิ้ว ก่อนจะถูกตัดแบ่งเป็นส่วนละ 2 นิ้ว<br />
+</span><strong><font face="'Courier New'">ครั้งที่ 2:</font></strong><font face="'Courier New'"> วุ้นขนาด 2&times;2&times;4 นิ้ว จะถูกตัดเป็นวุ้นขนาด 2&times;2&times;2 นิ้ว เพราะด้านที่ยาวที่สุดคือด้านที่ยาว 4 นิ้ว เนื่องจากเป็นจำนวนคู่จึงตัดแบ่งเป็นส่วนละ 2 นิ้ว<br />
+</font><strong><font face="'Courier New'">ครั้งที่ 3:</font></strong><font face="'Courier New'"> วุ้นขนาด 2&times;2&times;2 นิ้ว จะถูกตัดเป็นวุ้นขนาด 1&times;2&times;2 นิ้ว<br />
+</font><strong><font face="'Courier New'">ครั้งที่ 4:</font></strong><font face="'Courier New'"> วุ้นขนาด 1&times;2&times;2 นิ้ว จะถูกตัดเป็นวุ้นขนาด 1&times;1&times;2 นิ้ว<br />
+</font><strong><font face="'Courier New'">ครั้งที่ 5:</font></strong><font face="'Courier New'"> วุ้นขนาด 1&times;1&times;2 นิ้ว จะถูกตัดเป็นวุ้นขนาด 1&times;1&times;1 นิ้ว<br />
+</font><u style="font-family: 'Courier New'; "><strong><br />
+ที่มา<br />
+</strong></u></font><span style="font-family: 'Courier New'; ">การแข่งขัน IOI Thailand League เดือนตุลาคม 2553<br />
+</span><span style="font-family: 'Courier New'; ">โจทย์โดย:&nbsp;</span><font face="'Courier New'">ธนะ วัฒนวารุณ</font>
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>2 5 4</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>17 13 11</td>
+				<td>10</td>
+			</tr></table>

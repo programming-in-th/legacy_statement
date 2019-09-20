@@ -1,0 +1,48 @@
+Luka found a very unusual game board in his attic. Surprisingly, it consists of R&middot;C square cells. The<br />
+rows are numbered 0 to R&minus;1 top to bottom and the columns 0 to C&minus;1 left to right.<br />
+What makes the board unusual is the way in which the cells are coloured. Each cell is either grey or<br />
+white:<br />
+&middot; White, if the row and column numbers of the cell, when represented in binary, have at least one<br />
+digit 1 in the same position. For example, the cell (4, 5) would be white.<br />
+&middot; Grey, otherwise. For example, the cell (2, 5) would be grey.<br />
+The following image shows a board of size 10&middot;10.<br />
+<br />
+<div style="text-align: center;"><input width="700" type="image" height="314" src="http://www.programming.in.th/task/img/2023/2023-1.gif" longdesc="undefined" /></div>
+<br />
+Luka's hedgehog likes walking on this unusual board and does it in an unusual way. The hedgehog<br />
+starts his walk in the cell (0, 0) and continues in the zig-zag pattern as in the second image above. While<br />
+the hedgehog is walking, Luka counts <strong>how many grey squares</strong> it visited.<br />
+After visiting K squares, the hedgehog gets tired and falls asleep. Luka then goes to bed too, happy that<br />
+he was able count the grey squares.<br />
+<u><strong>Task</strong></u><br />
+Knowing the dimensions of the board and the number K beforehand, however, it is possible to write a<br />
+program that calculates the result faster. This is your task.<br />
+<u><strong>Input</strong></u><br />
+The first line contains two integers R (1 &le; R &le; 1 000 000) and C (1 &le; C &le; 1 000 000), the dimensions of<br />
+the board.<br />
+The second line contains the integer K (1 &le; K &le; R&middot;C), the total number of squares the hedgehog visits.<br />
+Note that this number may not fit in a 32-bit integer.<br />
+<u><strong>Output</strong></u><br />
+Output the number of grey cells the hedgehog visits.<br />
+<u><strong>Scoring</strong></u><br />
+In test cases worth 50% of points, K will be less than 1 000 000.<br />
+<br />
+<u><strong>Reference:</strong></u><strong> COCI 2008/2009, Contest #1 &ndash; October 18, 2008</strong><br type="_moz" />
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>10 10<br />6</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>3 5<br />11</td>
+				<td>8</td>
+			</tr>
+			<tr>
+				<td>10 10<br />100</td>
+				<td>51</td>
+			</tr></table>

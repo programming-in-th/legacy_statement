@@ -1,0 +1,43 @@
+<p class="MsoNormal"><span lang="TH" style="font-size:14.0pt;line-height:115%;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>วิชา คอมพิวเตอร์ กับวิชาคณิตศาสตร์นั้นอยู่ห่างกันเพียงเอื้อมมือ  นักคณิตศาสตร์เป็นผู้มีจินตนาการและความคิดสร้างสรรค์ล้ำเลิศ  พวกเขาจึงสรรค์สร้างสิ่งใหม่ๆออกมาได้ตลอดเวลา ในวันนี้ก็เช่นกัน  พวกเขาได้สร้างลำดับแบบใหม่ขึ้นมาบนโลกนี้ เรียกว่า </span><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi">&ldquo;<span lang="TH">ลำดับเลขไม่ซ้ำหลักไม่ลด</span>&rdquo; <span lang="TH">หรือมีชื่อภาษาอังกฤษว่า </span>&ldquo;Non &ndash; Repeat Decrease Sequence&rdquo; (NRDS) <span lang="TH">ลำดับ นี้เป็นลำดับของจำนวนเต็มบวกที่เลขโดดในแต่ละหลักไม่มีหลักใดซ้ำกันเลย  และเลขโดดจะมีค่าไม่ลดลงเมื่อพิจารณาจากหลักที่มีค่าประจำหลักมากสุดมายัง หลักหน่วย ตัวอย่างของเลขในลำดับนี้ เช่น </span>1, 23, 127<span lang="TH"> และตัวอย่างของเลขที่ไม่อยู่ในลำดับนี้ เช่น </span>131, 101, 609</span></p>
+<p class="MsoNormal"><span style="font-size:14.0pt;line-height:115%;font-family:
+&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="TH">แต่ถึงกระนั้น นักคณิตศาสตร์เหล่านั้นก็ไม่ยอมเปิดเผยลำดับของเลขนี้ออกมาทั้งหมด พวกเขาเปิดเผยมันออกมาแค่ </span>10 <span lang="TH">จำนวนแรก ดังนี้ 1</span>,<span lang="TH"> 2</span>, <span lang="TH">3</span>, <span lang="TH">4</span>, <span lang="TH">5</span>, <span lang="TH">6</span>, <span lang="TH">7</span>, <span lang="TH">8</span>, <span lang="TH">9</span>, <span lang="TH">12 พร้อมกับท้าทายคนทั้งประเทศว่าหากใครสามารถหาจำนวนที่ </span>N <span lang="TH">ใน ลำดับนี้ได้ พวกเขาจะให้รางวัลตอบแทนอย่างงาม  คุณซึ่งเป็นนักคอมพิวเตอร์ซึ่งคลั่งไคล้ในตัวเลข  เห็นว่าลำดับนี้นั้นมีความน่าสนใจอย่างมาก  คุณจึงพยายามที่จะเขียนโปรแกรมเพื่อหาจำนวนที่</span> N <span lang="TH">ของลำดับนี้ให้จงได้</span></span></p>
+<h2 align="left" style="margin-top:6.0pt;text-align:left"><span lang="TH" style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi">ข้อมูลนำเข้า</span></h2>
+<p align="left" class="MsoNormal" style="margin-bottom:2.0pt;text-align:left"><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span lang="TH" style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;MS Mincho&quot;;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi">บรรทัดแรกระบุจำนวนเต็ม </span><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-fareast-font-family:&quot;MS Mincho&quot;;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi">Q (1 <u>&lt;</u> Q <u>&lt;</u> 100,000) <span lang="TH">แทนจำนวนชุดทดสอบย่อย หลังจากนั้นอีก </span>Q <span lang="TH">บรรทัดในบรรทัดที่ </span>1 + i <span lang="TH">สำหรับ </span>1 <u>&lt;</u> i <u>&lt;</u> Q <span lang="TH">ระบุค่า </span>N (1 <u>&lt;</u> N <u>&lt;</u> 2<sup>32</sup>)<span lang="TH"> ของชุดทดสอบย่อยที่ </span>i</span></p>
+<h2 align="left" style="margin-top:6.0pt;text-align:left"><span lang="TH" style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi">ข้อมูลส่งออก</span></h2>
+<p class="MsoNormal"><span style="font-size: 14pt; line-height: 115%; font-family: &quot;Angsana New&quot;,&quot;serif&quot;;"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span lang="TH">มี</span> Q <span lang="TH">บรรทัด ในบรรทัดที่ </span>i <span lang="TH">สำหรับ </span>1 <u>&lt;</u> i <u>&lt;</u> Q <span lang="TH">แสดงจำนวนที่ </span>N <span lang="TH">ใน </span>NRDS <span lang="TH">ของชุดทดสอบย่อยที่ </span>i <span lang="TH">ถ้าหากว่าไม่มีจำนวนที่ </span>N<span lang="TH"> ใน</span> NRDS<span lang="TH"> ให้แสดง </span>-1 <span lang="TH">ออกมาแทน<br />
+<br />
+</span></span></p>
+<h2><span lang="TH" style="font-size:14.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi">ที่มา </span><span style="font-size:14.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi">: IOI Thailand League 2010 เดือนพฤษภาคม</span></h2>
+<p class="MsoNormal"><span style="font-size:14.0pt;line-height:115%;font-family:
+&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi"><span lang="TH"><br type="_moz" />
+</span></span></p>
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>11<br />1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />2000000000<br /></td>
+				<td>1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />12<br />-1<br /></td>
+			</tr></table>

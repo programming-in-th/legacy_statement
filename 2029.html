@@ -1,0 +1,28 @@
+The city of Siruseri has only one way roads. Roads meet at intersections and at every intersection, mandated by law, there is an ATM of the Bank of Siruseri. Strangely, the pubs in Siruseri are also located only at intersections, though not every intersection hosts a pub.<br />
+&nbsp;&nbsp;&nbsp; Banditji plans to carry out the largest ATM robbery in the history of Siruseri. He will start from the city centre and drive around, robbing all the ATMs that he passes by, before ending the day at one of the city's pubs to celebrate his achievement.<br />
+&nbsp;&nbsp;&nbsp; Using his well-honed hacking skills, Banditji has precise information about the amount of cash available at every ATM. He would like you to help him determine the total amount that he can rob by starting at the city centre and ending at one of the city's pubs. He can go through the same intersection or road any number of times. However, there is no money to be picked up at an ATM after the first visit.<br />
+&nbsp;&nbsp;&nbsp; For instance, suppose the city had 6 intersections connected by roads as indicated below:<br />
+<div style="text-align: center;"><input type="image" src="http://www.programming.in.th/task/img/2029/2029-1.gif" /></div>
+<br />
+&nbsp;&nbsp;&nbsp; The city centre is at intersection 1, marked by an incoming -&gt;, and the intersections where pubs are found are marked by a double circle. The amount of cash available at the respective ATMs is written above each intersection. In this case, Banditji can rob a total of 47 by following the route 1-2-4-1-2-3-5.<br />
+<br />
+<strong><u>Input format</u></strong><br />
+The first line of input contains 2 integers N and M, where N is the number of intersections and M is the number of roads. This is following by M lines, each with two integers in the range 1, 2, ..., N , giving the starting and ending intersection for one of the roads. This is followed by N lines, each containing a single integer, giving the amount of cash available at the ATMs at the N intersections. The following line contains two integers S and P, where S is the starting intersection (the city centre) and P is the number of pubs. This is followed by a line with P integers listing the intersections that contain pubs.<br />
+<br />
+<strong><u>Output format</u></strong><br />
+The output should be a single integer, the maximum amount of money that Banditji can rob on his way from the city centre to any one of the pubs.<br />
+<br />
+<u><strong>Test Data</strong></u><br />
+In 50% of the inputs, N,M &lt;= 3000. In all inputs, N,M &lt;= 500000. The amount of cash available at a single ATM is always non-negative and never exceeds 4000. You are guaranteed that at least one pub can be reached from the city centre by following Siruseri's one way roads.<br />
+<br />
+<u><strong>Reference:</strong></u><strong> Asia-Pacific Informatics Olympiad 2009</strong><br type="_moz" />
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>6 7<br />1 2<br />2 3<br />3 5<br />2 4<br />4 1<br />2 6<br />6 5<br />10<br />12<br />8<br />16<br />1<br />5<br />1 4<br />4 3 5 6</td>
+				<td>47</td>
+			</tr></table>

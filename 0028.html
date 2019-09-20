@@ -1,0 +1,45 @@
+<p><span style="font-family: 'Courier New'; ">ในการแข่งขันฟุตบอลโลก 2010 ที่ประเทศแอฟริกาใต้ มีทีมที่เข้าร่วมแข่งขันทั้งหมด 32 ทีม การแข่งขันในรอบแรกจะแบ่งออกเป็น 8 กลุ่ม กลุ่มละ 4 ทีม ทีมในแต่ละกลุ่มจะทำการแข่งขันแบบพบกันหมด โดยในการแข่งขันแต่ละนัด ทีมที่ชนะจะได้ 3 คะแนน ทีมที่แพ้จะไม่ได้คะแนน แต่ถ้าเสมอกันก็จะได้คะแนนทีมละ 1 คะแนน หลังจากแข่งขันจบ ทีมที่ได้อันดับ 1 และอันดับ 2 ของแต่ละกลุ่ม จะได้ผ่านเข้าสู่รอบต่อไป ซึ่งการจัดอันดับทีมในแต่ละกลุ่มจะพิจารณาจากเกณฑ์ดังนี้</span><span style="font-family: 'Courier New'; "><br />
+</span></p>
+<ol>
+    <li>ดูจากคะแนนที่ได้ ทีมใดได้คะแนนมากกว่าจะอยู่ในอันดับที่ดีกว่า</li>
+    <li><span style="font-family: 'Courier New'; ">หากเกณฑ์ในข้อ 1 ยังเท่ากัน ให้ดูจากจำนวนประตูที่ยิงได้ลบด้วยจำนวนประตูที่ถูกยิง ทีมใดได้มากกว่าก็จะอยู่ในอันดับที่ดีกว่า<br />
+    </span></li>
+    <li><span style="font-family: 'Courier New'; ">หากเกณฑ์ในข้อ 2 ยังเท่ากัน ดูจากจำนวนประตูที่ยิงได้ ทีมใดได้มากกว่าก็จะอยู่ในอันดับที่ดีกว่า<br />
+    </span></li>
+</ol>
+<p><span style="font-family: 'Courier New'; ">หลังจากที่คุณได้ดูการแข่งขันทุกคู่จนจบ คุณก็เกิดความสงสัยว่าแต่ละทีมได้คะแนนเท่าไร และได้อันดับเท่าไรในกลุ่ม<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>งานของคุณ</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">จงเขียนโปรแกรมเพื่อรับผลการแข่งขันของทีมในกลุ่มหนึ่ง และคำนวณหาคะแนนและอันดับในกลุ่มของแต่ละทีม<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>ข้อมูลนำเข้า</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">ใน 4 บรรทัดแรก บรรทัดที่ i (1 &le; i &le; 4) จะระบุชื่อทีมที่ i ซึ่งเป็นสตริงที่ประกอบด้วยตัวอักษรภาษาอังกฤษตัวพิมพ์ใหญ่หรือพิมพ์เล็กเท่านั้น (ไม่มีเว้นวรรค) และจะมีความยาวไม่เกิน 20 ตัวอักษร<br />
+</span><span style="font-family: 'Courier New'; "><br />
+ในบรรทัดที่ 5 ถึงบรรทัดที่ 8 จะระบุจำนวนเต็มบรรทัดละ 4 ตัว โดยจำนวนเต็มตัวที่ j (1 &le; j &le; 4) ในบรรทัดที่ i+4 (1 &le; i &le; 4) จะแสดงถึงจำนวนประตูที่ทีมที่ i ยิงได้ ในนัดที่แข่งขันกับทีมที่ j ยกเว้นในกรณีที่ i = j จำนวนเต็มดังกล่าวจะมีค่าเป็นศูนย์เสมอ<br />
+</span><span style="font-family: 'Courier New'; "><br />
+การแข่งขันแต่ละนัดจะมีการยิงประตูเกิดขึ้นไม่เกิน 10 ประตู และรับประกันว่าจะไม่มีสองทีมใดที่เท่ากันหมดในเกณฑ์การจัดอันดับทั้ง 3 ข้อ<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>ข้อมูลส่งออก</strong></u><br />
+</span><font face="'Courier New'">มี 4 บรรทัด โดยในบรรทัดที่ i (1 &le; i &le; 4) แสดงชื่อทีมที่ได้อันดับที่ i ของกลุ่ม ตามด้วยคะแนนของทีมดังกล่าว<br />
+<font face="'Courier New'"><br />
+<u><strong>การให้คะแนน</strong></u><br />
+</font><font face="'Courier New'">40% ของข้อมูลทดสอบ จะไม่มีสองทีมใดที่ได้คะแนนเท่ากันเลย<br />
+<br />
+</font></font><u style="font-family: 'Courier New'; "><strong>ที่มา</strong></u><br style="font-family: 'Courier New'; " />
+<span style="font-family: 'Courier New'; ">การแข่งขัน IOI Thailand League เดือนกรกฏาคม 2553</span><br style="font-family: 'Courier New'; " />
+<span style="font-family: 'Courier New'; ">โจทย์โดย: สุธี เรืองวิเศษ</span><font face="'Courier New'"><br />
+</font></p>
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>Denmark<br />Netherlands<br />Cameroon<br />Japan<br />0 0 2 1<br />2 0 2 1<br />1 1 0 0<br />3 0 1 0</td>
+				<td>Netherlands 9<br />Japan 6<br />Denmark 3<br />Cameroon 0</td>
+			</tr>
+			<tr>
+				<td>Germany<br />Serbia<br />Australia<br />Ghana<br />0 0 4 1<br />1 0 1 0<br />0 2 0 1<br />0 1 1 0</td>
+				<td>Germany 6<br />Ghana 4<br />Australia 4<br />Serbia 3</td>
+			</tr></table>

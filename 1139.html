@@ -1,0 +1,39 @@
+<div><span style="font-family: 'Courier New'; ">ณ สถาบันเทคโนโลยีแห่งหนึ่งทางภาคตะวันออกเฉียงเหนือ มีหอพักอยู่ทั้งหมด N หอ ตั้งอยู่บนพิกัดที่เป็นจำนวนเต็มบนระนาบสองมิติ แต่ละหอก็มีนักเรียนจำนวนหนึ่งพักอยู่<br />
+</span><span style="font-family: 'Courier New'; "><br />
+วันหนึ่ง ทางสถาบันได้วางแผนที่จะสร้างอาคารเรียนแห่งใหม่ขึ้นมา 1 อาคาร ซึ่งต้องตั้งอยู่บนพิกัดที่เป็นจำนวนเต็มเช่นกัน โดยต้องการให้ระยะทางรวมที่นักเรียนทุกคนใช้ในการเดินไปเรียนมีค่าน้อยที่สุดเท่าที่จะทำได้<br />
+</span><span style="font-family: 'Courier New'; "><br />
+เนื่องจากทางเดินในสถาบันแห่งนี้มีลักษณะเป็นตารางสี่เหลี่ยมจัตุรัส หากหอพักของนักเรียนตั้งอยู่ที่พิกัด (x<sub>1</sub>, y<sub>1</sub>) และอาคารเรียนตั้งอยู่ที่พิกัด (x<sub>2</sub>, y<sub>2</sub>) นักเรียนจะต้องเดินมาเรียนเป็นระยะทาง&nbsp;</span>|x<sub>1&nbsp;</sub>- x<sub>2</sub>| + |y<sub>1</sub>&nbsp;- y<sub>2</sub>|<span style="font-family: 'Courier New'; ">&nbsp;นอกจากนี้ หอพักแต่ละหอยังมีขนาดเล็กมาก จึงอาจมีหอพักมากกว่า 1 หอ ตั้งอยู่ที่พิกัดเดียวกันได้ และตำแหน่งที่จะสร้างอาคารเรียน อาจตรงกับพิกัดของหอพักบางหอก็ได้<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>งานของคุณ</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">จงเขียนโปรแกรมเพื่อรับตำแหน่งที่ตั้งและจำนวนนักเรียนในหอพักแต่ละหอ แล้วคำนวณหาระยะทางรวมที่น้อยที่สุดที่นักเรียนทุกคนใช้ในการเดินไปเรียน<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>ข้อมูลนำเข้า</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">บรรทัดแรกระบุจำนวนเต็ม N (1 &le; N &le; 500,000) แทนจำนวนหอพักทั้งหมด<br />
+</span><span style="font-family: 'Courier New'; "><br />
+อีก N บรรทัดต่อมา ในบรรทัดที่ i+1 (1 &le; i &le; N) ระบุจำนวนเต็ม X<sub>i</sub>, Y<sub>i</sub> และ S<sub>i</sub> (1 &le; X<sub>i</sub>,Y<sub>i</sub> &le; 1,000,000,000; 1 &le; S<sub>i</sub> &le; 1,000) แทนพิกัดบนแกน X พิกัดบนแกน Y และจำนวนนักเรียนในหอพักที่ i<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>ข้อมูลส่งออก</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">มีบรรทัดเดียว แทนระยะทางรวมที่น้อยที่สุดที่นักเรียนทุกคนใช้ในการเดินไปเรียน<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>การให้คะแนน</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">30% ของข้อมูลทดสอบ จะมี S<sub>i</sub> = 1 สำหรับทุกจำนวนเต็ม i&nbsp;</span> <span style="font-family: 'Courier New'; ">(1 &le; i &le; N</span>&nbsp;)<span style="font-family: 'Courier New'; "><br />
+</span><span style="font-family: 'Courier New'; ">60% ของข้อมูลทดสอบ จะมี N &le; 100,000<br />
+</span><span style="font-family: 'Courier New'; ">20% ของข้อมูลทดสอบ จะสอดคล้องกับเงื่อนไขด้านบนทั้งสองข้อ<br />
+<br />
+</span><u style="font-family: 'Courier New'; "><strong>ที่มา</strong></u><br style="font-family: 'Courier New'; " />
+<span style="font-family: 'Courier New'; ">โจทย์โดย: สุธี เรืองวิเศษ</span><span style="font-family: 'Courier New'; "><br type="_moz" />
+</span></div>
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>4<br />1 2 1<br />2 1 1<br />2 3 1<br />3 2 1</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>3<br />1 1 1<br />6 3 3<br />4 8 2</td>
+				<td>21</td>
+			</tr></table>

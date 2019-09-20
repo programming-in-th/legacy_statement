@@ -1,0 +1,109 @@
+<span style="font-family: Courier New;">ศจ.ปี๊ด เป็นนักโบราณคดีที่มีชื่อเสียง&nbsp; เนื่องจากเป็นคนแรกที่ขุดพบศิลาจารึกของอาณาจักรโบราณชื่อว่าอาณาจักรมุ่ยมุ่ย&nbsp; ซึ่งศิลาจารึกนี้ได้บันทึกความรู้เกี่ยวกับการคำนวณในสมัยโบราณไว้&nbsp; หลังจากที่ ศจ.ปี๊ด&nbsp; ได้แปลความหมายของศิลาจารึกแล้ว&nbsp; เขาได้พบว่าตัวเลขดังกล่าวเป็นตัวเลขที่ประหลาดมากจนเขาคิดว่ามันควรจะเป็นของมนุษย์ต่างดาวมากกว่าเป็นของมนุษย์ในโลกนี้&nbsp; เพราะระบบตัวเลขดังกล่าวมีเลขโดดเพียงสี่ตัวคือ 0, 1, 3, และ 7 และ ค่าประจำหลักจะมีค่าเป็นเลขยกกำลังของ 5&nbsp; นั่นคือตัวเลขทางขวาสุดจะมีค่าประจำหลักเป็น 1 และตัวถัดมาทางซ้ายจะมีค่าประจำหลักเป็น 5 เท่าของตัวเลขทางขวา&nbsp; ดังตัวอย่าง<br />
+<br />
+<strong>ตัวอย่าง&nbsp;</strong> ตัวเลข 1113 ในระบบมุ่ยมุ่ย&nbsp; จะมีตัวเลขประจำหลักและค่าประจำหลักดังนี้<br />
+<br />
+</span>
+<table height="117" cellspacing="1" cellpadding="5" border="1" align="center" width="400" style="">
+    <tbody>
+        <tr>
+            <td><span style="font-family: Courier New;">&nbsp;</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;"><strong>หลักที่ 4</strong></span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;"><strong>หลักที่ 3</strong></span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;"><strong>หลักที่ 2</strong></span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;"><strong>หลักที่ 1</strong></span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Courier New;"><strong>ค่าประจำหลัก</strong></span></td>
+            <td><span style="font-family: Courier New;">5<sup>3</sup></span></td>
+            <td><span style="font-family: Courier New;">5<sup>2</sup></span></td>
+            <td><span style="font-family: Courier New;">5<sup>1</sup></span></td>
+            <td><span style="font-family: Courier New;">1</span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Courier New;"><strong>ตัวเลขประจำหลัก</strong></span></td>
+            <td><span style="font-family: Courier New;">1</span></td>
+            <td><span style="font-family: Courier New;">1</span></td>
+            <td><span style="font-family: Courier New;">1</span></td>
+            <td><span style="font-family: Courier New;">3</span></td>
+        </tr>
+    </tbody>
+</table>
+<span style="font-family: Courier New;"> <br />
+ค่าของตัวเลข 1113 ในระบบมุ่ยมุ่ยจะมีค่าเท่ากับ 1 &times; 5<sup>3</sup> + 1 &times; 5<sup>2</sup> + 1 &times; 5<sup>1</sup> + 3 &times; 1 = 158<br />
+<br />
+<strong>ปัญหาที่เกิดขึ้น </strong>คือ ตัวเลขในระบบมุ่ยมุ่ยจะไม่สามารถแทนค่าบางค่าได้&nbsp; ดังนั้นจึงการเขียนตัวเลขจึงต้องเขียนเป็นตัวเลขสองตัวลบกันเสมอ&nbsp; ดังตัวอย่าง<br />
+<br />
+</span>
+<table height="327" cellspacing="1" cellpadding="5" border="1" align="center" width="350" style="">
+    <tbody>
+        <tr>
+            <td style="text-align: center;"><span style="font-family: Courier New;"><strong>ตัวเลขในระบบมุ่ยมุ่ย</strong></span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;"><strong>ตัวเลขในระบบฐานสิบ</strong></span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Courier New;">117-3</span></td>
+            <td><span style="font-family: Courier New;">34</span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Courier New;">333-111</span></td>
+            <td><span style="font-family: Courier New;">62</span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Courier New;">13-1</span></td>
+            <td><span style="font-family: Courier New;">7</span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Courier New;">7-0</span></td>
+            <td><span style="font-family: Courier New;">7</span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Courier New;">30713-101</span></td>
+            <td><span style="font-family: Courier New;">2032</span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Courier New;">31113-1</span></td>
+            <td><span style="font-family: Courier New;">2032</span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Courier New;">3-1</span></td>
+            <td><span style="font-family: Courier New;">2</span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Courier New;">7-3</span></td>
+            <td><span style="font-family: Courier New;">4</span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Courier New;">0-0</span></td>
+            <td><span style="font-family: Courier New;">0</span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family: Courier New;">131-0</span></td>
+            <td><span style="font-family: Courier New;">41</span></td>
+        </tr>
+    </tbody>
+</table>
+<span style="font-family: Courier New;"> <br />
+<strong>หมายเหตุ&nbsp;</strong> ตัวเลขในระบบฐาน 10 บางตัวสามารถเขียนเป็นตัวเลขในระบบมุ่ยมุ่ยได้มากกว่าหนึ่งแบบ<br />
+<br />
+<u><strong>โจทย์</strong></u><br />
+ให้คุณเขียนโปรแกรมเพื่อรับตัวเลขจำนวนเต็มบวกในระบบเลขฐาน 10 แล้วแปลงเป็นตัวเลขในระบบมุ่ยมุ่ย&nbsp; โดยที่ตัวเลขในระบบฐาน 10 ที่รับจะมีค่าไม่เกิน 2,000,000&nbsp; หากสามารถแปลงเป็นตัวเลขในระบบมุ่ยมุ่ยได้หลายแบบให้แปลงเป็นแบบใดก็ได้<br />
+<br />
+<u><strong>ข้อมูลนำเข้า</strong></u><br />
+<strong>บรรทัดแรก</strong>ประกอบด้วยจำนวนเต็ม N (1 &le; N &le; 1000) เป็นจำนวนของตัวเลขมุ่ยมุ่ยในอินพุต<br />
+<strong>บรรทัดที่ 2 ถึงบรรทัดที่ N+1</strong> ในบรรทัดที่ i+1 ประกอบด้วยตัวเลขจำนวนเต็มบวก mi&nbsp; (0 &le; mi &le; 2,000,000) ซึ่งเป็นตัวเลขในระบบเลขฐานสิบ<br />
+<br />
+<u><strong>ข้อมูลส่งออก</strong></u><br />
+<strong>ประกอบด้วยข้อมูล N บรรทัด</strong>&nbsp; ในบรรทัดที่ i เป็นตัวเลขในระบบมุ่ยมุ่ย สองตัว ai และ bi คั่นด้วยเครื่องหมาย &ldquo;-&rdquo;<span><br />
+<br />
+<u><strong>ที่มา</strong></u><strong>:</strong> </span><span><b>การแข่งขันคณิตศาสตร์ วิทยาศาสตร์ โอลิมปิกแห่งประเทศไทย สาขาวิชาคอมพิวเตอร์ ประจำปี 2550</b></span><br type="_moz" />
+</span>
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>8<br />34<br />62<br />7<br />2032<br />2<br />4<br />0<br />41</td>
+				<td>117–3<br />333-111<br />13-1<br />31113-1<br />3-1<br />7-3<br />0–0<br />131–0</td>
+			</tr></table>

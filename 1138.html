@@ -1,0 +1,36 @@
+<div><span style="font-family: 'Courier New'; ">คุณได้งานใหม่เป็นผู้ดูแลหนังสือเวทมนตร์ต้องห้ามของปีศาจ หน้าที่ของคุณคือการเดินทางไปเก็บรวบรวมหนังสือเวทมนตร์จากที่ต่างๆ บนโลก โลกที่คุณอยู่เป็นโลก 1 มิติ ซึ่งจะระบุตำแหน่งด้วยพิกัดบนเส้นจำนวน<br />
+</span><span style="font-family: 'Courier New'; "><br />
+คุณทราบว่า มีหนังสือเวทมนตร์อยู่ทั้งหมด N เล่ม โดยในทุกๆ วัน จะมีหนังสือ 1 เล่มปรากฏขึ้น ณ ที่ใดที่หนึ่งบนโลก และจะปรากฏอยู่เพียงวันเดียวเท่านั้น ก่อนจะสลายหายไป&nbsp;</span><span style="font-family: 'Courier New'; ">คุณสามารถเดินทางได้เป็นระยะทางครั้งละไม่เกิน K หน่วย ดังนั้น&nbsp;</span><span style="font-family: 'Courier New'; ">หากจุดที่หนังสือปรากฏขึ้นอยู่ห่างจากจุดที่คุณอยู่ไม่เกิน K หน่วย คุณจะสามารถเดินทางไปเก็บหนังสือเล่มนั้นได้ และจุดที่คุณเดินทางไปถึงก็จะเป็นที่อยู่ใหม่ของคุณ อย่างไรก็ตาม คุณได้รับอนุญาตให้เดินทางเพื่อไปเก็บหนังสือเพียงอย่างเดียว ดังนั้น จุดหมายปลายทางของการเดินทางทุกครั้งจะต้องเป็นจุดที่มีหนังสือปรากฏอยู่เท่านั้น</span></div>
+<div><span style="font-family: 'Courier New'; "><br />
+หนังสือเวทมนตร์แต่ละเล่มจะมีมูลค่าแตกต่างกันไป คุณต้องการเก็บหนังสือให้ได้มูลค่ารวมมากที่สุดเท่าที่จะทำได้<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>งานของคุณ</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">จงเขียนโปรแกรมเพื่อรับ</span><span style="font-family: 'Courier New'; ">ตำแหน่งที่ปรากฏ</span><span style="font-family: 'Courier New'; ">และมูลค่าของหนังสือเวทมนตร์แต่ละเล่ม แล้วคำนวณหามูลค่ารวมมากที่สุดของหนังสือที่คุณสามารถเก็บได้<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>ข้อมูลนำเข้า</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">บรรทัดแรกระบุจำนวนเต็ม N, K และ S (1 &le; N &le; 100,000; 1 &le; K,S &le; 1,000,000,000) แทนจำนวนหนังสือเวทมนตร์ ระยะทางมากที่สุดที่คุณสามารถเดินทางได้ และพิกัดตอนเริ่มต้นของคุณ ตามลำดับ<br />
+</span><span style="font-family: 'Courier New'; "><br />
+อีก N บรรทัดต่อมา ในบรรทัดที่ i+1 (1 &le; i &le; N) ระบุจำนวนเต็ม X<sub>i</sub> และ A<sub>i</sub> (</span><span style="font-family: 'Courier New'; ">1 &le; X</span><sub style="font-family: 'Courier New'; ">i</sub><span style="font-family: 'Courier New'; ">&nbsp;&le; 1,000,000,000;&nbsp;</span><span style="font-family: 'Courier New'; ">1 &le; A</span><sub style="font-family: 'Courier New'; ">i</sub><span style="font-family: 'Courier New'; "> &le; 10,000</span><span style="font-family: 'Courier New'; ">) แทนตำ</span><span style="font-family: 'Courier New'; ">แหน่งและ</span><span style="font-family: 'Courier New'; ">มูลค่าของหนังสือที่ปรากฏในวันที่ i</span></div>
+<div><span style="font-family: 'Courier New'; "><br />
+<u><strong>ข้อมูลส่งออก</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">มีบรรทัดเดียว แทนมูลค่ารวมมากที่สุด</span><span style="font-family: 'Courier New'; ">ของหนังสือที่คุณสามารถเก็บได้</span><span style="font-family: 'Courier New'; "><br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>การให้คะแนน</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">30% ของข้อมูลทดสอบ จะมี N &le; 5,000<br />
+</span><u style="font-family: 'Courier New'; "><strong><br />
+ที่มา</strong></u><br style="font-family: 'Courier New'; " />
+<span style="font-family: 'Courier New'; ">โจทย์โดย: สุธี เรืองวิเศษ</span></div>
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>3 2 4<br />5 2<br />10 3<br />7 5</td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<td>4 5 10<br />7 6<br />13 5<br />18 10<br />10 5</td>
+				<td>15</td>
+			</tr></table>

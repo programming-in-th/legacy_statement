@@ -1,0 +1,44 @@
+<span style="font-family: 'Courier New'; ">พิจารณาสตริงที่ประกอบด้วยเครื่องหมายวงเล็บ 3 ชนิด คือวงเล็บกลม ( ) วงเล็บเหลี่ยม [ ] และวงเล็บปีกกา { } เราจะเรียกสตริงหนึ่งว่าเป็น &quot;สตริงวงเล็บสมดุล&quot; เมื่อวงเล็บในสตริงนั้นสามารถจับคู่กันได้อย่างถูกต้อง ซึ่งเราสามารถนิยามสตริงวงเล็บสมดุลอย่างเป็นทางการได้ดังนี้</span><br type="_moz" />
+<ol>
+    <li><span style="font-family: 'Courier New'; ">(), [] และ {} เป็นสตริงวงเล็บสมดุล<br />
+    </span></li>
+    <li><span style="font-family: 'Courier New'; ">ถ้า A เป็นสตริงวงเล็บสมดุล แล้ว (A), [A] และ {A} ก็เป็นสตริงวงเล็บสมดุลเช่นกัน<br />
+    </span></li>
+    <li><span style="font-family: 'Courier New'; ">ถ้า A และ B เป็นสตริงวงเล็บสมดุล แล้ว AB ก็เป็นสตริงวงเล็บสมดุลเช่นกัน<br />
+    </span></li>
+</ol>
+<p><span style="font-family: 'Courier New'; ">สังเกตว่า เราจะสามารถสร้างสตริงวงเล็บสมดุลความยาวต่างๆ ได้โดยใช้กฎสามข้อข้างบนนี้ เช่น เราสามารถสร้าง [(){}] โดยเริ่มจากใช้กฎข้อที่ 1 สร้าง () และ {} แล้วใช้กฎข้อที่ 3 สร้าง (){} แล้วจึงใช้กฎ</span><span style="font-family: 'Courier New'; ">ข้อที่ 2 สร้าง [(){}]<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>งานของคุณ</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">จงเขียนโปรแกรมเพื่อตอบคำถามทั้งหมด Q คำถามว่า สตริงที่ให้มาเป็นสตริงวงเล็บสมดุลหรือไม่<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>ข้อมูลนำเข้า</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">บรรทัดแรกระบุจำนวนเต็ม Q (2 &le; Q &le; 10) แทนจำนวนคำถามทั้งหมด<br />
+</span><span style="font-family: 'Courier New'; "><br />
+อีก Q บรรทัดต่อมา ในบรรทัดที่ i+1 (1 &le; i &le; Q) จะมีสตริงในคำถามที่ i ซึ่งแต่ละสตริงจะประกอบไปด้วยเครื่องหมายวงเล็บกลม วงเล็บเหลี่ยม หรือวงเล็บปีกกาเท่านั้น และแต่ละสตริงจะมี</span><font face="'Courier New'">ความยาวไม่เกิน 100,000<font face="'Courier New'"><b><u><br />
+</u></b> </font></font><span style="font-family: 'Courier New'; "><u><strong><br />
+ข้อมูลส่งออก</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">มีทั้งหมด Q บรรทัด โดยในบรรทัดที่ i (1 &le; i &le; Q) ให้พิมพ์ yes ถ้าสตริงในคำถามที่ i เป็นสตริงวงเล็บสมดุล และพิมพ์ no ถ้าสตริงในคำถามที่ i ไม่เป็นสตริงวงเล็บสมดุล<br />
+</span><font face="'Courier New'" style="font-family: 'Courier New'; "><u><strong><br />
+การให้คะแนน</strong></u><br />
+</font><span style="font-family: 'Courier New'; ">30% ของข้อมูลทดสอบ สตริงในคำถามทุกสตริงจะประกอบด้วยวงเล็บเพียงชนิดเดียวเท่านั้น คือวงเล็บกลม</span><font face="'Courier New'" style="font-family: 'Courier New'; "><br />
+</font><span style="font-family: 'Courier New'; ">50% ของข้อมูลทดสอบ สตริงในคำถามทุกสตริงจะมีความยาวไม่เกิน 100<br />
+</span><font face="'Courier New'" style="font-family: 'Courier New'; ">15% ของข้อมูลทดสอบ จะสอดคล้องกับเงื่อนไขด้านบนทั้งสองข้อ</font>&nbsp;<br />
+<u style="font-family: 'Courier New'; "><strong><br />
+ที่มา</strong></u><br style="font-family: 'Courier New'; " />
+<span style="font-family: 'Courier New'; ">การแข่งขัน IOI Thailand League เดือนมิถุนายน 2553</span><br style="font-family: 'Courier New'; " />
+<span style="font-family: 'Courier New'; ">โจทย์โดย: สุธี เรืองวิเศษ</span></p>
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>3<br />(())<br />(()))(()<br />(()())()</td>
+				<td>yes<br />no<br />yes</td>
+			</tr>
+			<tr>
+				<td>3<br />({])[]<br />[({}])<br />()[{}()]</td>
+				<td>no<br />no<br />yes</td>
+			</tr></table>

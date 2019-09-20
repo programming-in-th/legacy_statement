@@ -1,0 +1,34 @@
+<p><span style="font-family: 'Courier New'; ">ในขณะที่คุณกำลังสำรวจโบราณสถานของอาณาจักรสุโขทัยโบราณอยู่&nbsp;คุณได้พบเสาหินโบราณที่หลงเหลือจากการทำลายจำนวนมากตั้งเรียงรายอยู่โดยรอบ เพื่อนของคุณนึกสนุกจึงท้าคุณให้หาพื้นที่ทั้งหมดที่ล้อมรอบด้วยเสาหินเหล่านี้ โดยมีรางวัลเป็นขนมแสนอร่อยที่เพื่อนของคุณซื้อมา<br />
+<br />
+ด้วยความที่คุณมีความเป็นนักคณิตศาสตร์อยู่ในตัว คุณทราบดีว่ามันยากเกินไปที่จะหาพื้นที่ดังกล่าวในระยะเวลาอันสั้น คุณจึงขอเพื่อนเปลี่ยนเป็นหาพื้นที่สามเหลี่ยมที่ใหญ่ที่สุดที่มีเสาหินเป็นจุดมุมของสามเหลี่ยมแทน<br />
+</span></p>
+<p><span style="font-family: 'Courier New'; "><strong>หมายเหตุ:</strong>&nbsp;สำหรับสามเหลี่ยมที่จุดยอดทั้งสามมีพิกัด (x<sub>1</sub>, y<sub>1</sub>), (x<sub>2</sub>, y<sub>2</sub>) และ (x<sub>3</sub>, y<sub>3</sub>) &nbsp;พื้นที่ของสามเหลี่ยมจะมีค่าเท่ากับ |x<sub>1</sub>y<sub>2</sub> + x<sub>2</sub>y<sub>3</sub> + x<sub>3</sub>y<sub>1</sub> - y<sub>1</sub>x<sub>2</sub> - y<sub>2</sub>x<sub>3</sub> - y<sub>3</sub>x<sub>1</sub>|/2<br />
+</span><span style="font-family: 'Courier New'; "><br />
+<u><strong>งานของคุณ</strong></u><br />
+เขียนโปรแกรมรับพิกัดของเสาหินทั้งหมด แล้วคำนวณหาพื้นที่สามเหลี่ยม</span><span style="font-family: 'Courier New'; ">ที่ใหญ่ที่สุด</span><span style="font-family: 'Courier New'; ">ที่มีเสาหินเป็นจุดมุม<br />
+</span><span style="font-family: 'Courier New'; "><u><strong><br />
+ข้อมูลนำเข้า</strong></u><br />
+บรรทัดแรกระบุจำนวนเต็มบวก N (1&nbsp;</span><span style="color: rgb(102, 102, 102); font-family: 'Courier New'; font-size: 13px; ">&le;&nbsp;</span><span style="font-family: 'Courier New'; ">N&nbsp;</span><span style="color: rgb(102, 102, 102); font-family: 'Courier New'; font-size: 13px; ">&le;&nbsp;</span><span style="font-family: 'Courier New'; ">100) แทนจำนวนเสาหินทั้งหมด<br />
+</span><span style="font-family: 'Courier New'; "><br />
+จากนั้นอีก N บรรทัดจะระบุพิกัดของเสาหิน กล่าวคือ สำหรับบรรทัดที่ i+1 (1&nbsp;</span> <span style="color: rgb(102, 102, 102); font-family: 'Courier New'; font-size: 13px; ">&le;</span>&nbsp;<span style="font-family: 'Courier New'; ">&nbsp;i&nbsp;</span> <span style="color: rgb(102, 102, 102); font-family: 'Courier New'; font-size: 13px; ">&le;</span>&nbsp;&nbsp;<span style="font-family: 'Courier New'; ">N)&nbsp;ระบุจำนวนเต็มสองจำนวน X<sub>i</sub> และ Y<sub>i</sub>&nbsp;คั่นด้วยช่องว่าง โดย (X<sub>i</sub>, Y<sub>i</sub>) คือพิกัดของเสาหินต้นที่ i (-1,000&nbsp;</span><span style="color: rgb(102, 102, 102); font-family: 'Courier New'; font-size: 13px; ">&le;</span><span style="font-family: 'Courier New'; ">&nbsp;X<sub>i</sub>,Y<sub>i</sub>&nbsp;</span><span style="color: rgb(102, 102, 102); font-family: 'Courier New'; font-size: 13px; ">&le;&nbsp;</span><span style="font-family: 'Courier New'; ">1,000</span><span style="font-family: 'Courier New'; ">) รับประกันว่าเสาหินสองต้นจะไม่มีพิกัดเดียวกัน<br />
+<br />
+<u><strong>ข้อมูลส่งออก</strong></u><br />
+</span><span style="font-family: 'Courier New'; ">มีหนึ่งจำนวน เป็นจำนวนจริงแทนพื้นที่ของสามเหลี่ยมที่ใหญ่ที่สุดที่มีเสาหินเป็นจุดมุม แสดงเป็นทศนิยม 3 ตำแหน่ง<br />
+<br />
+</span><u style="font-family: 'Courier New'; "><strong>ที่มา</strong></u><br style="font-family: 'Courier New'; " />
+<span style="font-family: 'Courier New'; ">การแข่งขัน IOI Thailand League เดือนกันยายน 2553</span><br style="font-family: 'Courier New'; " />
+<span style="font-family: 'Courier New'; ">โจทย์โดย:&nbsp;</span><font face="'Courier New'">ธงชัย วิโรจน์ศักดิ์เสรี</font></p>
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>5<br />1 2<br />2 1<br />0 0<br />3 4<br />-1 -2</td>
+				<td>3.000</td>
+			</tr>
+			<tr>
+				<td>5<br />1 1<br />2 2<br />3 3<br />1 4<br />4 1</td>
+				<td>4.500</td>
+			</tr></table>

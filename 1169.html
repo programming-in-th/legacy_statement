@@ -1,0 +1,209 @@
+<p align="left" class="MsoNormal" style="text-align:left"><span lang="TH" style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi">ให้สตริงที่ประกอบไปด้วยวงเล็บเปิด </span><span style="font-size:
+14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi">&lsquo;(&lsquo; <span lang="TH">และวงเล็บปิด </span>&lsquo;)&rsquo; <span lang="TH"><span style="mso-spacerun:yes">&nbsp;</span>จงคำนวณหาจำนวนวงเล็บเปิดหรือปิดที่น้อยที่สุดที่ต้องเติมในสตริงดังกล่าว เพื่อทำให้วงเล็บเปิดและปิดจับคู่กันได้อย่างถูกต้อง</span><span style="mso-spacerun:yes">&nbsp; </span><span lang="TH">(สำหรับนิยามอย่างเป็นทางการของการจับคู่ได้อย่างถูกต้องดูได้จากส่วนอธิบายเพิ่มเติมท้ายโจทย์)</span></span></p>
+<p align="left" class="MsoNormal" style="text-align:left"><span lang="TH" style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>พิจารณาตัวอย่างตามตารางด้านล่าง</span></p>
+<table cellspacing="0" cellpadding="0" border="1" class="MsoNormalTable" style="border-collapse:collapse;border:none;mso-border-alt:solid black .5pt;
+    mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+    .5pt solid black;mso-border-insidev:.5pt solid black">
+    <tbody>
+        <tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+            <td width="241" valign="top" style="width:180.9pt;border:solid black 1.0pt;
+            mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+            <p align="center" class="MsoNormal" style="text-align:center"><span lang="TH" style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+            mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+            major-bidi">สตริงตั้งต้น</span></p>
+            </td>
+            <td width="252" valign="top" style="width:189.0pt;border:solid black 1.0pt;
+            border-left:none;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+            padding:0cm 5.4pt 0cm 5.4pt">
+            <p align="center" class="MsoNormal" style="text-align:center"><span lang="TH" style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+            mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+            major-bidi">การเติมที่น้อยที่สุดแบบหนึ่ง</span></p>
+            </td>
+            <td width="123" valign="top" style="width:92.2pt;border:solid black 1.0pt;
+            border-left:none;mso-border-left-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+            padding:0cm 5.4pt 0cm 5.4pt">
+            <p align="center" class="MsoNormal" style="text-align:center"><span lang="TH" style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+            mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+            major-bidi">จำนวนที่ต้องเติม</span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:1">
+            <td width="241" valign="top" style="width:180.9pt;border:solid black 1.0pt;
+            border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+            padding:0cm 5.4pt 0cm 5.4pt">
+            <p align="center" class="MsoNormal" style="text-align:center"><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+            mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+            major-bidi">(()(</span></p>
+            </td>
+            <td width="252" valign="top" style="width:189.0pt;border-top:none;border-left:
+            none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+            mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+            mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+            <p align="center" class="MsoNormal" style="text-align:center"><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+            mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+            major-bidi">(()<b><u>)</u></b>(<b><u>)</u></b></span></p>
+            </td>
+            <td width="123" valign="top" style="width:92.2pt;border-top:none;border-left:
+            none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+            mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+            mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+            <p align="center" class="MsoNormal" style="text-align:center"><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+            mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+            major-bidi">2</span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:2">
+            <td width="241" valign="top" style="width:180.9pt;border:solid black 1.0pt;
+            border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+            padding:0cm 5.4pt 0cm 5.4pt">
+            <p align="center" class="MsoNormal" style="text-align:center"><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+            mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+            major-bidi">())(</span></p>
+            </td>
+            <td width="252" valign="top" style="width:189.0pt;border-top:none;border-left:
+            none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+            mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+            mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+            <p align="center" class="MsoNormal" style="text-align:center"><b><u><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+            mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+            major-bidi">(</span></u></b><span style="font-size:14.0pt;line-height:115%;
+            font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+            major-bidi;mso-bidi-theme-font:major-bidi">())(<b><u>)</u></b></span></p>
+            </td>
+            <td width="123" valign="top" style="width:92.2pt;border-top:none;border-left:
+            none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+            mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+            mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+            <p align="center" class="MsoNormal" style="text-align:center"><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+            mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+            major-bidi">2</span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:3">
+            <td width="241" valign="top" style="width:180.9pt;border:solid black 1.0pt;
+            border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+            padding:0cm 5.4pt 0cm 5.4pt">
+            <p align="center" class="MsoNormal" style="text-align:center"><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+            mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+            major-bidi">((())())</span></p>
+            </td>
+            <td width="252" valign="top" style="width:189.0pt;border-top:none;border-left:
+            none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+            mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+            mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+            <p align="center" class="MsoNormal" style="text-align:center"><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+            mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+            major-bidi">((())())</span></p>
+            </td>
+            <td width="123" valign="top" style="width:92.2pt;border-top:none;border-left:
+            none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+            mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+            mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+            <p align="center" class="MsoNormal" style="text-align:center"><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+            mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+            major-bidi">0</span></p>
+            </td>
+        </tr>
+        <tr style="mso-yfti-irow:4;mso-yfti-lastrow:yes">
+            <td width="241" valign="top" style="width:180.9pt;border:solid black 1.0pt;
+            border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+            padding:0cm 5.4pt 0cm 5.4pt">
+            <p align="center" class="MsoNormal" style="text-align:center"><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+            mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+            major-bidi">(()()))())</span></p>
+            </td>
+            <td width="252" valign="top" style="width:189.0pt;border-top:none;border-left:
+            none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+            mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+            mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+            <p align="center" class="MsoNormal" style="text-align:center"><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+            mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+            major-bidi">(()()<b><u>(</u></b>))()<b><u>(</u></b>)</span></p>
+            </td>
+            <td width="123" valign="top" style="width:92.2pt;border-top:none;border-left:
+            none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+            mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+            mso-border-alt:solid black .5pt;padding:0cm 5.4pt 0cm 5.4pt">
+            <p align="center" class="MsoNormal" style="text-align:center"><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+            mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+            major-bidi">2</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h2 align="left" style="text-align:left"><span lang="TH" style="font-size:14.0pt;
+line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi">งานของคุณ</span></h2>
+<p align="left" class="MsoNormal" style="text-align:left"><span lang="TH" style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi">เขียนโปรแกรมรับสตริงที่ประกอบด้วยวงเล็บเปิดและวง เล็บปิด จากนั้นคำนวณหาจำนวนวงเล็บที่ต้องเติมเข้าไปในสตริงดังกล่าว  เพื่อให้เป็นสตริงที่วงเล็บเปิดและปิดจับคู่กันได้อย่างถูกต้อง</span></p>
+<h2 align="left" style="text-align:left"><span lang="TH" style="font-size:14.0pt;
+line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi">ข้อมูลนำเข้า</span></h2>
+<p align="left" class="MsoNormal" style="text-align:left"><span lang="TH" style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi">มีบรรทัดเดียวเป็นสตริงที่ประกอบด้วยวงเล็บเปิดและวงเล็บปิด ความยาวไม่เกิน </span><span style="font-size:14.0pt;line-height:115%;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi">200 <span lang="TH">ตัวอักษร</span></span></p>
+<h2 align="left" style="text-align:left"><span lang="TH" style="font-size:14.0pt;
+line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi">ข้อมูลส่งออก</span></h2>
+<p align="left" class="MsoNormal" style="text-align: left;"><span lang="TH" style="font-size: 14pt; line-height: 115%; font-family: &quot;Angsana New&quot;,&quot;serif&quot;;">มีหนึ่งบรรทัด เป็นจำนวนเต็มแทนจำนวนวงเล็บที่น้อยที่สุดที่ต้องเติมเข้าไปในสตริงเพื่อให้เป็นสตริงที่ถูกต้อง<br />
+</span></p>
+<h2 align="left" style="text-align:left"><span lang="TH" style="font-size:14.0pt;
+line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi">คำอธิบายเพิ่มเติม (ไม่จำเป็นนักต่อการทำโจทย์)</span></h2>
+<p align="left" class="MsoNormal" style="text-align:left"><span lang="TH" style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi">สำหรับสตริงที่ประกอบไปด้วยวงเล็บเปิดและวงเล็บปิด  เราจะกล่าวว่าสตริงดังกล่าวมีการจับกันของวงเล็บเปิดและปิดอย่างถูกต้อง  ก็ต่อเมื่อเราสามารถจับคู่วงเล็บเปิดกับวงเล็บปิดได้แบบ </span><span style="font-size:14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi">1 <span lang="TH">ต่อ </span>1<span lang="TH"> โดยที่สอดคล้องกับเงื่อนไขต่อไปนี้</span>:<span style="mso-spacerun:yes">&nbsp; </span><span lang="TH">ถ้าวงเล็บเปิดที่เป็นอักขระที่ </span>i <span lang="TH">จับคู่กับวงเล็บปิดที่เป็นอักขระที่ </span>j <span lang="TH">ในสตริง เราจะได้ว่า</span></span></p>
+<p align="left" class="MsoNormal" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;mso-list:l0 level1 lfo1"><span style="font-size:14.0pt;line-height:115%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-size:14.0pt;line-height:115%;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi">i &lt; j<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>(<span lang="TH">วงเล็บเปิดอยู่หน้าวงเล็บปิด)</span>,</span></p>
+<p align="left" class="MsoNormal" style="margin-left:36.0pt;text-align:left;
+text-indent:-18.0pt;mso-list:l0 level1 lfo1"><span style="font-size:14.0pt;line-height:115%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span lang="TH" style="font-size:14.0pt;
+line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi">สำหรับวงเล็บเปิดใด ๆ ที่อยู่ที่ตำแหน่ง </span><span style="font-size:14.0pt;line-height:115%;
+font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:
+major-bidi;mso-bidi-theme-font:major-bidi">a <span lang="TH">ที่ </span>i &lt; a &lt; j, <span lang="TH">วงเล็บเปิดนั้นจะต้องจับคู่กับวงเล็บปิดที่อยู่ที่ตำแหน่ง </span>b <span lang="TH">ที่ </span>a &lt; b &lt; j <span lang="TH">เท่านั้น</span></span></p>
+<span style="font-size:14.0pt;line-height:115%;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span lang="TH" style="font-size:14.0pt;
+line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi">และในทางกลับกัน วงเล็บปิดใด ๆ ที่อยู่ที่ตำแหน่ง </span><span style="font-size:14.0pt;
+line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:major-bidi;
+mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi">a <span lang="TH">ที่ </span>i &lt; a &lt; j, <span lang="TH">วงเล็บปิดนั้นจะต้องจับคู่กับวงเล็บเปิดที่อยู่ที่ตำแหน่ง </span>b <span lang="TH">ที่ </span>i &lt; b &lt; a <span lang="TH">เท่านั้น เช่นกัน</span></span><span style="font-size: 14pt; line-height: 115%; font-family: &quot;Angsana New&quot;,&quot;serif&quot;;"><br />
+<br />
+</span>
+<h2><span lang="TH" style="font-size:14.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi">ที่มา </span><span style="font-size:14.0pt;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;
+mso-ascii-theme-font:major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:
+major-bidi">: IOI Thailand League 2010 เดือนพฤษภาคม</span></h2>
+<span style="font-size:
+14.0pt;line-height:115%;font-family:&quot;Angsana New&quot;,&quot;serif&quot;;mso-ascii-theme-font:
+major-bidi;mso-hansi-theme-font:major-bidi;mso-bidi-theme-font:major-bidi"><br />
+<br type="_moz" />
+</span>
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>())(</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>(()()))())</td>
+				<td>2</td>
+			</tr></table>

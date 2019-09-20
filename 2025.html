@@ -1,0 +1,35 @@
+Moles are tidy and hard-working animals. Our mole likes to keep its underground residence in utmost order, so that everyone living there knows where to find things.<br />
+To achieve this, the mole connected rooms with tunnels so that there is a single unique way to get from one room to any other room. The distance between two rooms is the number of halls passed on the way from one to the other.<br />
+Despite all the effort, some of the mole's guests are complaining that it takes too long to walk between certain pairs of rooms.<br />
+The mole decided to reconstruct her residence, closing one tunnel and opening a new one, so that the <strong>distance between the farthest two rooms</strong> is the <strong>smallest possible</strong>, but so that it is still possible to reach every room from every other room.<br />
+<u><strong>Task</strong></u><br />
+Write a program which determines the distance between the farthest two rooms after reconstruction, which tunnel to close and which to open.<br />
+<u><strong>Input</strong></u><br />
+The first line contains an integer N (1 &le; N &le; 300 000), the number of rooms. The rooms are numbered 1 to N.<br />
+Each of the next N&minus;1 lines contains two integers, the numbers of rooms a tunnel connects.<br />
+<u><strong>Output</strong></u><br />
+Output on separate lines, in order:<br />
+&middot; The distance between the two farthest rooms after reconstruction.<br />
+&middot; A pair of integers representing a previously existing tunnel, which should be closed.<br />
+&middot; A pair of integers, the rooms between which a new tunnel should be opened.<br />
+<strong>Note:</strong> The solution will not necessarily be unique. Output any reconstruction plan which achieves the smallest distance between the farthest two rooms.<br />
+<u><strong>Scoring</strong></u><br />
+In test cases worth 40% of points, N will be less than 30.<br />
+In test cases worth 70% of points, N will be less than 3000.<br />
+Additionally, if the first line of your output is correct and the other two are missing or incorrect, you will receive about 70% of the value of that test case.<br />
+<br />
+<u><strong>Reference:</strong></u><strong> COCI 2008/2009, Contest #1 &ndash; October 18, 2008</strong><br type="_moz" />
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>4<br />1 2<br />2 3<br />3 4</td>
+				<td>2<br />3 4<br />4 2</td>
+			</tr>
+			<tr>
+				<td>7<br />1 3<br />2 3<br />2 7<br />4 3<br />7 5<br />3 6</td>
+				<td>3<br />2 3<br />7 3</td>
+			</tr></table>

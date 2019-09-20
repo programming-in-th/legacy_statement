@@ -1,0 +1,89 @@
+<span style="font-family: Courier New;">ในเกมวงล้อรางวัล มีล้อกลมที่แบ่งเป็น N ช่อง ไล่จากช่องที่ 1 ไปจนถึงช่องที่ N ตามเข็มนาฬิกา โดยช่องที่ N จะติดกับช่องที่ 1 ในแต่ละช่องของวงล้อมีรางวัลมูลค่าต่าง ๆ ระบุไว้ โดยช่องที่&nbsp; i สำหรับ 1 &lt;= i &lt;= N จะมีรางวัลมูลค่า Ai บาท วงล้อดังกล่าวหมุนได้ และมีลูกศรชี้ช่องรางวัลปัจจุบันไว้ โดยเมื่อเริ่มต้นลูกศรชี้ช่องที่ 1 (ดูรูปด้านข้าง)<br />
+<br />
+</span><center><span style="font-family: Courier New;"><img src="./img/1055/1055-1.gif" alt="" /></span></center><span style="font-family: Courier New;"><br />
+<br />
+มีผู้เล่น K คนเข้าร่วมเล่นเกมครั้งนี้ เกมจะดำาเนินเป็นตา โดยเริ่มจากผู้เล่นคนที่ 1 คนที่ 2 ไปจนถึงผู้เล่นคนที่ K จากนั้น จะวนกลับมาผู้เล่นคนที่ 1 อีกครั้ง ในการเล่นแต่ละตา ผู้เล่นคนที่เล่นตานั้น จะโยนลูกเต๋า เมื่อได้ผลลัพธ์จากลูกเต๋าแล้วสมมติได้คะแนนเป็น X จะหมุนวงล้อไปในทิศทางทวนเข็มนาฬิกาโดยจะหมุนข้ามช่องที่ยังมีรางวัลอยู่ไป X ช่อง และไปหยุดอยู่ที่ช่องที่มีรางวัลช่องถัดไป ผู้เล่นที่โยนลูกเต๋าจะได้ของรางวัลในช่องนัน้ และผลัดให้ผู้เล่นคนถัดไปโยนลูกเต๋า เกมจะดำาเนินไปเรื่อย ๆ จนกระทั่งของรางวัลหมด<br />
+<br />
+พิจารณาการเล่นเกมบนวงล้อที่แบ่งเป็น 5 ช่อง โดยที่มูลค่าของรางวัลในช่องต่าง ๆ เริ่มจากช่องที่ 1 คือ 3, 5, 2, 4, และ 1 บาท สมมติว่ามีผู้เล่น 3 คน ตัวอย่างการเล่นเกมแสดงดังตารางด้านล่าง (หมายเลขช่องที่หมุนข้ามที่แสดงในวงเล็บแสดงช่องในวงล้อที่ไม่มีรางวัลแล้วดังนั้น ในการหมุนให้หมุนข้ามไปเลย)<br />
+<br />
+</span>
+<table cellspacing="0" cellpadding="5" border="1" align="center" width="95%">
+    <tbody>
+        <tr>
+            <td style="text-align: center;"><span style="font-family: Courier New;"><strong>ตาที่</strong></span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;"><strong>ผู้เล่น</strong></span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;"><strong>โยนลูกเต๋าได้</strong></span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;"><strong>หมุนเข้าช่อง<br />
+            </strong></span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;"><strong>หยุดที่ช่อง</strong></span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;"><strong>มูลค่าที่ได้</strong></span></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><span style="font-family: Courier New;">1</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">1</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">3</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">1,2,3</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">4</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">4</span></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><span style="font-family: Courier New;">2</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">2</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">5</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">(4),5,1,2,3,(4),5</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">1</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">3</span></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><span style="font-family: Courier New;">3</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">3</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">1</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">(1),2</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">3</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">2</span></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><span style="font-family: Courier New;">4</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">1</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">2</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">(3),(4),5,(1),2,(3),(4)</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">5</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">1</span></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><span style="font-family: Courier New;">5</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">2</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">1</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">วนสองรอบ</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">2</span></td>
+            <td style="text-align: center;"><span style="font-family: Courier New;">5</span></td>
+        </tr>
+    </tbody>
+</table>
+<span style="font-family: Courier New;"> <br />
+<br />
+ดังนัน้ ผู้เล่นคนแรกจะได้รางวัลมูลค่ารวม 5 บาท คนที่สองมูลค่ารวม 8 บาท และคนที่สามมูลค่ารวม 2 บาท<br />
+<br />
+<u><strong>งานของคุณ</strong></u><br />
+ให้เขียนโปรแกรมที่รับข้อมูลของรางวัลบนล้อ และแต้มของลูกเต๋าที่ผู้เล่นแต่ละคนโยนได้ จากนั้น คำานวณว่าผู้เล่นแต่ละคนจะได้รับรางวัลมูลค่ารวมกี่บาท<br />
+<br />
+<u><strong>ข้อมูลนำเข้า </strong></u><br />
+<strong>บรรทัดแรก</strong>ระบุจำานวนเต็ม N และ K (1 &lt;= N &lt;= 100; 1 &lt;= K &lt;= 20)<br />
+<strong>จากนั้น อีก N บรรทัด</strong>จะระบุมูลค่าของรางวัลในช่องต่าง ๆ กล่าวคือในบรรทัดที่ i + 1 สำหรับ 1 &lt;= i &lt;= N จะระบุค่า Ai (1 &lt;= Ai &lt;= 100)ที่เป็นไปได้ตัง้ แต่ 1 ถึง 6 (1 &lt;= Xj &lt;= 6)<br />
+<strong>อีก N บรรทัด</strong>จะระบุแต้มของลูกเต๋าที่โยนได้ตามลำาดับ กล่าวคือในบรรทัดที่ j + N +1 สำหรับ 1 &lt;= j &lt;= N จะระบุจำนวนเต็ม Xj แทนแต้มของลูกเต๋าในการโยนครัง้ ที่ j แต้มของลูกเต๋าจะมีค่า<br />
+<br />
+<u><strong>ข้อมูลส่งออก </strong></u><br />
+<strong>ข้อมูลส่งออกมีทั้งสิ้น K บรรทัด</strong> แต่ละบรรทัดมีจำานวนเต็มหนึ่ง จำนวนระบุมูลค่ารวมของรางวัลที่ผู้เล่นแต่ละคนจะได้รับ เริ่มจากคนที่ 1 ถึงคนที่ K บรรทัดละค่า<br />
+<br />
+<u><strong>ที่มา</strong></u><strong>: Young Thai Online Programming Competition 2008</strong><br />
+</span>
+		<table>
+			<tr>
+				<th>ข้อมูลนำเข้า</th>
+				<th>ข้อมูลส่งออก</th>
+			</tr>	
+		
+			<tr>
+				<td>5 3<br />3<br />5<br />2<br />4<br />1<br />3<br />5<br />1<br />2<br />1</td>
+				<td>5<br />8<br />2</td>
+			</tr></table>
